@@ -1,0 +1,33 @@
+@use '/src/style/base';
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 0.8 1.4;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+#grid-blob {
+    @include bg(linear-gradient(to right, $secondary-color, $tertiary-color),0.3);
+
+    background-clip: border-box;
+
+    height: 50svw;
+    aspect-ratio: 1;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+
+    border-radius: 50%;
+
+    animation: rotate 15s infinite forwards linear;
+    filter: blur(2vmax);
+}

@@ -1,0 +1,33 @@
+@use './base';
+
+#details{
+    @include flex(center,center,column,nowrap,clamp(10px,2svw,1.2svw));
+    background: rgba($secondary-color,0.9);
+    padding: 1%;
+    width: 100%;
+}
+
+.box{
+
+    background: rgba($white,0.2);
+    border: rgba($white,0.5) 0.1svw solid;
+    border-radius: clamp(4px,0.4svw,0.8svw);
+
+    width: 50%;
+    padding: clamp(8px,1.2svw,2svw);
+
+    
+    @include flex(none,center,row,wrap);
+    gap:2svw;
+}
+.odd{
+    margin-left: 30%;
+    align-self: flex-start;
+    align-content: flex-start;
+}
+.even{
+    margin-right: 30%;
+    align-self: flex-end;
+    align-content: end;
+    flex-direction: row-reverse;
+}

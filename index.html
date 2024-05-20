@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+  </head>
+  <body>
+    <div id="app">
+      <div id="event-cursor"></div>
+      <!-- landing page or the home page -->
+      <section id="home">
+        <!-- grid parent -->
+          <div id="grid"></div>
+
+          <!-- the gradient blob that is just above the grid -->
+          <div id="grid-blob"></div>
+
+          <!-- the gradient effect to black-out the grid from the edges -->
+          <div id="black-tint"></div>
+
+          <!-- main content of the homepage such as event name,lab name,company name -->
+          <div id="bannerBox">
+            
+            <div id="tsig">tsig</div>
+            <div id="event-name">
+              <span class="primary">intern</span>prenuer
+            </div>
+            <div class="p">in collaboration with</div>
+            <div id="brand">loremipsumtech</div>
+
+            <!-- action btn's div' -->
+            <div class="btns ">
+              <button id="enroll" class="btn">enroll now</button>
+              <button id="learn" class="btn">learn more</button>
+            </div>
+            <div class="noti">
+              <span class="dots" id="start"></span>
+              <span class="date">26th May</span>
+              <span class="dots" id="end"></span>
+              <span class="date">8th June</span>
+            </div>
+          </div>
+      </section>
+
+      <!-- divider shape block -->
+      <section class="divider" id="after-home">
+        <div class="divider-top">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
+      </div>
+      </section>
+
+      <!-- what is interprenuer block -->
+      <section id="event-info">
+        <div class="heading">what is <span id="intern">Internprenuer</span>?</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, vel? Molestias iusto fugiat, labore distinctio quos fuga dolore minus debitis! Ea nesciunt aperiam soluta veniam similique sapiente eaque dignissimos natus!
+        Repellendus fuga labore quia voluptatum similique numquam architecto voluptatem qui corrupti necessitatibus cumque quis odit assumenda commodi eveniet ex ipsa nostrum, tenetur quod repellat? Est facere dolore unde nam inventore?</p>
+        <button id="detail-btn">See Details</button>
+      </section>
+
+      <!-- divider shape block  -->
+      <section class="triangle" id="after-event">
+      <div class="triangle-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+    
+      </section>
+
+      <section id="details">
+        <div class="heading">Details</div>
+        <div class="box odd">
+            <i data-lucide="clock"></i>
+          <div class="text">loooooooooooong text</div>
+        </div>
+        <div class="box even">
+          <i data-lucide="calendar-days"></i>
+          <div class="text">loooooooooooong text</div>
+        </div>
+        <div class="box odd">
+          <div class="icon">icon</div>
+          <div class="text">loooooooooooong text</div>
+        </div>
+        <div class="box even">
+          <div class="icon">icon</div>
+          <div class="text">loooooooooooong text</div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@use '/src/style/base';
+
+/* Animation */
+@keyframes linear-grid{
+    from{
+        background-position: 0 center;
+    }
+    to{
+        background-position: -200% center;
+    }
+}
+
+
+#grid{
+    height: auto;
+    min-height: calc(100svh - 6px);
+    
+    width: auto;
+    min-width: calc(100svw - 6px);
+    
+    display: grid;
+    grid-template-columns: repeat(var(--cols),1fr);
+    grid-template-rows: repeat(var(--rows),1fr);
+    position: relative;
+    
+    @include bg( linear-gradient(
+        to right,
+        $tertiary-color,
+        $secondary-color,
+        $tertiary-color
+        ),0.2);
+    
+    background-size: 200%;
+    animation: linear-grid 
+    $duration-time 
+    $time-function 
+    $duration-delay 
+    $repeat-count;
+
+
+}
+.tile{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.tile::after {
+    @include bg($balck,1);
+    content:"";
+    inset: 2px ;
+    position: absolute; 
+}

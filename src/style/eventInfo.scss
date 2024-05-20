@@ -1,0 +1,62 @@
+@use "/src/style/base";
+
+#event-info {
+    @include flex(center, center, column, nowrap, 10px);
+
+    background: rgba($primary-color,0.9);
+    width: 100%;
+    min-height: 80svh;
+    color: $balck;
+    position: relative;
+
+
+
+    p {
+        font-size: clamp(24px,2svw,3svw);
+        padding: 5svh 10svw;
+        text-align: justify;
+        width: 100%;
+        line-height: clamp(40px,2.5svw,3svw);
+    }
+}
+
+.heading {
+    text-align: center;
+    font-size: 4svw;
+    text-transform: uppercase;
+
+    font-family: $space-mono;
+    font-weight: 700;
+    letter-spacing: 0.2svw;
+}
+    
+#intern {
+        position: relative;
+        transition: all ease 500ms;
+        color: $secondary-color;
+        margin-right: 10px;
+        border-radius: 12px;
+}
+
+#detail-btn{
+    all: unset;
+    margin: 1svw;
+    background: rgba($secondary-color,0.9);
+    color: rgba($white,0.9);
+
+    padding: clamp(8px,1svw,2svw);
+
+    border-radius: clamp(8px,0.4svw,1svw);
+
+    font-weight: 600;
+    font-size: clamp(18px,1.2svw,2svw);
+    text-transform: capitalize;
+
+    transition: all ease 500ms;
+
+    &:hover,&:focus,&:active{
+        filter: drop-shadow(0 0 5px rgba($balck,0.5));
+        scale: 1.02;
+        rotate: 0.5deg;
+    }
+}

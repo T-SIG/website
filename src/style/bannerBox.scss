@@ -1,0 +1,148 @@
+@use '/src/style/base';
+
+#bannerBox{
+    @include flex(center,center,column,nowrap,0.8svw);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: clamp(10px,25px,40px);
+    text-transform: uppercase;
+
+    font-family: $sora;
+    color: $white;
+    text-align: center;
+
+    #tsig{
+        font-family: $teko;
+        font-size: clamp(25px,3svw,5svw);
+        color: #f7b40b;
+        letter-spacing: clamp(10px,2svw,3svw);
+        font-weight: 500;
+    }
+
+    #event-name{
+        .primary{
+            color: #f7b40b;
+        }
+        color: white;
+        font-size: clamp(30px,6svw,8svw);
+        font-weight: 600;
+    }
+    .p{
+        font-weight: 200;
+        font-size: clamp(12px,2svw,4svw);
+        letter-spacing: clamp(4px,1svw,2svw);
+    }
+    #brand{
+        font-weight: 600;
+        font-size: clamp(15px,2.5svw,6svw);
+        margin-block: 1svw;
+        letter-spacing: clamp(3px,0.6svw,1svw);
+        color: #f7b40b;
+    }
+    .btns{
+        @include flex(center,center,row,wrap,clamp(20px,4svw,6svw));
+        padding: 10px;
+        
+        .btn{
+            all: unset;
+            padding: clamp(8px,0.8svw,1svw);
+            border-radius: clamp(4px,8px,24px);
+            letter-spacing: clamp(3px,0.3svw,1svw);
+            font-size: clamp(8px,1svw,2svw);
+            cursor: none;
+        }
+        #enroll{
+            @include bg($primary-color);
+            color: $balck;
+            font-weight: 700;
+            border: 0.1svw solid gold;
+
+            transition: all ease-in-out 500ms;
+            &:hover,&:focus,&:active{
+                filter: drop-shadow($primary-color 0px 0px 0.8svw);
+                scale: 1.05;
+                rotate: 1deg;
+            }
+        }
+        #learn{
+            @include bg(hsla(0,0%,100%,0.3));
+            border: 0.1svw solid $white;
+            font-weight: 700;
+            transition: all ease-in-out 500ms;
+            &:hover,&:focus,&:active{
+                filter: drop-shadow(hsla(0,0%,100%,0.8) 0px 0px 0.8svw);
+                scale: 1.05;
+                rotate: -1deg;
+            }
+        }
+    }
+}
+
+// notification
+.noti{
+    background: rgba($white,0.1);
+    color: rgba($white,0.8);
+
+    padding: clamp(12px,0.8svw,1svw);
+    margin: clamp(16px,1.2svw,2svw);
+
+    border: 0.03svw solid rgba($white,0.6);
+    border-radius: clamp(4px,0.4svw,0.8svw);
+
+
+    font-family: $martin;
+    font-weight: 300;
+    font-size: clamp(8px,01svw,1.8svw);
+
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.2svw;
+
+    width: 35%;
+
+    .dots{
+        height: 0.5svw;
+        aspect-ratio: 1;
+        display: inline-block;
+        border-radius: 100%;
+    }
+    transition: all ease 300ms;
+
+    &:hover,&:active,&:focus{
+        filter: drop-shadow(0 0 16px rgba($white,0.4));
+        rotate: (-0.5deg);
+    }
+}
+
+#start{
+    background: $tertiary-color;
+    animation: lightGreen 2s ease-in-out 0s infinite alternate;
+}
+@keyframes lightGreen{
+    to{
+        box-shadow: 0 0 16px 4px $tertiary-color;
+    }
+    from {
+        box-shadow: 0 0 16px 0px $tertiary-color;
+    }
+}
+$red : rgb(255, 55, 55);
+#end{
+    background: $red;
+    animation: lightRed 2s ease-in-out 1000ms infinite alternate;
+}
+
+@keyframes lightRed{
+    to{
+        box-shadow: 0 0 16px 4px $red;
+    }
+    from {
+        box-shadow: 0 0 16px 0px $red;
+    }
+}

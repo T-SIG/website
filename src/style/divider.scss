@@ -1,0 +1,89 @@
+@use '/src/style/base';
+
+.divider{
+
+    @include bg($primary-color,0.9);
+
+    position: relative;
+    min-height: 24svh;
+
+}
+.triangle{
+
+    @include bg($secondary-color,0.9);
+
+    position: relative;
+    min-height: 25svh;
+
+}
+.divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.divider-top .shape-fill {
+    fill: $balck;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .divider{
+        height: 16svh;
+    }
+    .divider-top svg {
+        width: calc(100% + 1.3px);
+        height: 90px;
+    }
+
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .divider{
+        min-height: 8svh;
+    }
+    .divider-top svg {
+        width: calc(100% + 1.3px);
+        height: 50px;
+    }
+}
+// triangle top
+.triangle-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.triangle-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    min-height: 74px;
+}
+
+.triangle-top .shape-fill {
+    fill: $primary-color;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .triangle-top svg {
+        width: calc(100% + 1.3px);
+        height: 49px;
+    }
+}

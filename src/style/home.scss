@@ -1,0 +1,47 @@
+@use '/src/style/base';
+#home{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+        #event-cursor{
+            background: red;
+        }
+    }
+}
+#black-tint{
+    position: absolute;
+    top: 0;
+    @include bg(
+        radial-gradient(
+        ellipse at center,
+        transparent,
+        $balck  70%),1);
+    height: 100%;
+    width: 100%;
+    z-index: auto;
+}
+
+
+//cursor animation
+#app:hover > #event-cursor {
+    opacity: 1;
+}
+#event-cursor{
+    height: 25px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: $white;
+
+    z-index: 9999;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: all 500ms linear;
+}

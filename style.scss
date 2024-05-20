@@ -1,0 +1,25 @@
+// base css
+@import '/src/style/base';
+
+//home 
+@import '/src/style/home.scss';
+
+// grid 
+@import '/src/style/grid.scss';
+
+// grid bg blob
+@import '/src/style/grid-blob.scss';
+
+// abnner box
+@import '/src/style/bannerBox.scss';
+
+
+//divider-top
+@import '/src/style/divider.scss';
+
+// event-info
+@import '/src/style/eventInfo.scss';
+
+
+//details section
+@import './src/style/details.scss';
