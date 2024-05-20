@@ -30,7 +30,7 @@ const detailBtn = document.getElementById("detail-btn")
 
 // intern animation
 const intern = document.getElementById("intern")
-intern.onmouseover = e => {handleDecryptionAnimation(intern,"Interprenuer")}
+intern.onmouseover = e => {handleDecryptionAnimation(intern,"Internpreneur")}
 // enroll now btn
 //cursor animation
 cursorAnimation()
