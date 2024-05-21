@@ -1,5 +1,5 @@
 //importing fonts
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@75..112.5,100..800&family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@75..112.5,100..800&family=Sora:wght@100..800&family=Teko:wght@300..700&display=swap');
 
 
 /* root variables */
@@ -7,14 +7,14 @@
 $primary-color: rgb(247, 180, 11);
 $secondary-color: rgb(11, 78, 247);
 $tertiary-color:rgb(11, 247, 62);
-$balck: black;
+$primary-red: rgb(255,0,0);
+$primary-pink:rgb(247, 11, 196);
+$balck: rgb(0, 0, 0);
 $white: white;
-
 // fonts 
 $teko:'Teko',sans-serif;
 $sora:'Sora',sans-serif;
-$martin:'Martian Mono',monospace;
-$space-mono:'Space Mono',monospace;
+$martian:'Martian Mono',monospace;
 
 //grid background animation variables
 $duration-time: 10s;

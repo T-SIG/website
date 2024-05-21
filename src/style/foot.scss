@@ -1,0 +1,78 @@
+#foot{
+    @include flex(start,center,column,nowrap,clamp(16px,1.2svw,2svw));
+    position: relative;
+    a{
+        all: unset;
+
+    }
+    #links-box{
+        @include flex(center,space-evenly,row,wrap,clamp(16px,2svw,2svw));
+        font-family: $martian;
+        font-weight: 200;
+
+        // defined for icons that are linked in footer
+        .icons:hover,.icons:active,.icons:focus{
+                $color: var(--color);
+                stroke: $color;
+                scale: 1.05;
+                filter: drop-shadow(0 0 2px $color);
+        }
+    }
+    #foot-box{
+        @include flex(space-evenly,center,column,nowrap,15px);
+        text-align: center;
+        font-family: $martian;
+        font-weight: 200;
+        font-size: clamp(12px,1svw,3svw);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .location{
+        @include flex(space-evenly,flex-end,row,wrap);
+        transition: all ease 500ms;
+        // building icon
+        .icons{
+            height: clamp(20px,1.2svw,3svw);
+            stroke-width: 1.2;
+            aspect-ratio: 1;
+            stroke: rgba($white,1);
+            
+        }
+    }
+    .copy{
+        margin: 5px;
+        letter-spacing: 5px;
+        color: rgba($white,0.7);
+        font-size: clamp(8px,0.8svw,3svw);
+    }
+
+    // defined for whole footer
+    .icons{
+        height: clamp(28px,2svw,3svw);
+        aspect-ratio: 1;
+        stroke: rgba($white,1);
+        stroke-width: 1;
+        transition: all ease 500ms;
+    }
+    &::after{
+        margin: 10px;
+        
+        color: rgba($white,0.1);
+        opacity: 0;
+
+        font-size: clamp(10px,1svw,3svw);
+        font-family: $martian;
+
+        text-transform: uppercase;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        transition: all ease 500ms;
+        content: "made by ateeb ansari";
+    }
+    &:hover::after{
+        opacity: 1;
+    }
+}

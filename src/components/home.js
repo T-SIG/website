@@ -1,5 +1,4 @@
-// import anime from 'animejs/lib/anime.es.js'
-
+import { siJavascript, siSimpleicons } from "simple-icons";
 import { cursorAnimation } from "./cursor";
 import { handleDecryptionAnimation } from "./handleDecAni";
 import { cols, createGrid, rows} from "/src/components/grid"
@@ -25,42 +24,25 @@ btns[1].addEventListener("click",(e)=>{
         behavior:'smooth'
     })
 })
+// see details scroll
 const detailBtn = document.getElementById("detail-btn")
-
+const tilt0 = document.querySelector("#after-event")
+const detailSec = document.getElementById("details")
+detailBtn.addEventListener("click",(e)=>{
+    window.scrollTo({
+        top: detailSec.offsetTop - tilt0.offsetHeight,
+        left:0,
+        behavior:'smooth'
+    })
+})
 
 // intern animation
 const intern = document.getElementById("intern")
-intern.onmouseover = e => {handleDecryptionAnimation(intern,"Internpreneur")}
-// enroll now btn
-//cursor animation
-cursorAnimation()
-// // scale animation
-// home.addEventListener("click",handleAnimation)
+intern.onmouseover = e => {handleDecryptionAnimation(intern,"Interprenuer")}
 
-// function handleAnimation(event) {
-//     anime({
-//         targets: '.tile',
-//         scale: [
-//                 {
-//                     value: .01,
-//                     easing: 'easeOutSine',
-//                     duration: 800
-//                 },
-//                 {
-//                     value: 1, 
-//                     easing: 'easeInOutQuad', 
-//                     duration: 500
-//                 }
-//             ],
-//             delay: anime.stagger(50,
-//                 {
-//                     grid: [
-//                         cols,
-//                         rows
-//                     ],
-//                     from:event.target.dataset.tileindex
-//                 },
-//             )
-//     });
-//}
+//main cursor animation
+cursorAnimation()
+
+//lock animation
+
 

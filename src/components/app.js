@@ -1,6 +1,6 @@
 import { cursor } from "./cursor"
 import { home} from "./home"
-import { createIcons, Clock,CalendarDays } from "lucide"
+import { createIcons, Clock,CalendarRange, BookOpenCheck, Handshake, Users, Video, MessagesSquare, FileBadge, CalendarClock, Target, HandCoins, ReceiptIndianRupee, IndianRupee, LockOpen, Linkedin, Github, Instagram, Mail, Building2, } from "lucide"
 
 export function app() {
     const bannerBox = document.getElementById("bannerBox")
@@ -9,10 +9,35 @@ export function app() {
     createIcons({
         icons: {
             Clock,
-            CalendarDays
+            CalendarRange,
+            BookOpenCheck,
+            Handshake,
+            Users,
+            Video,
+            MessagesSquare,
+            FileBadge,
+            CalendarClock,
+            Target,
+            HandCoins,
+            ReceiptIndianRupee,
+            IndianRupee,
+            LockOpen,
+            Linkedin,
+            Github,
+            Instagram,
+            Mail,
+            Building2,
         },
         attrs:{
-            class: ["icon","lucide"]
+            class: ["icons","lucide"],
+            height: "",
+            width: "",
         }
+    })
+
+    const icons = document.getElementById("links-box").querySelectorAll(".icons")
+    icons.forEach((e)=>{
+        let color = e.parentElement.dataset.color;
+        e.style.setProperty("--color",color)
     })
 }

@@ -1,21 +1,33 @@
 @use '/src/style/base';
-
+$alpha:0.9;
 .divider{
-
-    @include bg($primary-color,0.9);
-
-    position: relative;
-    min-height: 24svh;
-
-}
-.triangle{
-
-    @include bg($secondary-color,0.9);
+    @include bg($primary-color,$alpha);
 
     position: relative;
     min-height: 25svh;
-
 }
+.tilt0{
+    @include bg($secondary-color,$alpha);
+
+    position: relative;
+    min-height: 25svh;
+}
+.tilt{
+    @include bg($tertiary-color,$alpha);
+
+    position: relative;
+    min-height: 25svh;
+}
+.book-like{
+
+    @include bg($balck,$alpha);
+
+    position: relative;
+    min-height: 80px;
+    height:5svw;
+}
+
+//first divider wave
 .divider-top {
     position: absolute;
     top: 0;
@@ -59,8 +71,8 @@
         height: 50px;
     }
 }
-// triangle top
-.triangle-top {
+// tilt0 top
+.tilt0-top {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,21 +81,81 @@
     line-height: 0;
 }
 
-.triangle-top svg {
+.tilt0-top svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     min-height: 74px;
 }
 
-.triangle-top .shape-fill {
+.tilt0-top .shape-fill {
     fill: $primary-color;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .triangle-top svg {
+    .tilt0-top svg {
         width: calc(100% + 1.3px);
         height: 49px;
+    }
+}
+
+
+// title
+
+.tilt-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.tilt-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    min-height: 100px;
+}
+
+.tilt-top .shape-fill {
+    fill: $secondary-color;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .tilt-top svg {
+        width: calc(100% + 1.3px);
+        height: 60px;
+    }
+}
+
+
+.book-di {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.book-di svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.book-di .shape-fill {
+    fill: $tertiary-color;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .book-di svg {
+        width: calc(100% + 1.3px);
+        height: 50px;
     }
 }

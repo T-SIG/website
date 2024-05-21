@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="/tsig.png" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TSIG MJCET</title>
+    <title>Vite App</title>
 
   </head>
   <body>
@@ -24,23 +24,23 @@
           <!-- main content of the homepage such as event name,lab name,company name -->
           <div id="bannerBox">
             
-            <div id="tsig">tsig</div>
+            <div class="tsig-text">tsig</div>
             <div id="event-name">
-              <span class="primary">intern</span>preneur
+              <span class="primary">intern</span>prenuer
             </div>
             <div class="p">in collaboration with</div>
-            <div id="brand">Advanced Technology Training Academy, Australia</div>
+            <div id="brand">Advance technology training company, australia</div>
 
             <!-- action btn's div' -->
             <div class="btns ">
-              <a id="enroll" href="https://forms.gle/kAkDm3HbGGZoMSfC9" class="btn" target="_blank">enroll now</a>
+              <button id="enroll" class="btn"><a href="https://forms.gle/kAkDm3HbGGZoMSfC9" target="_blank" id="enroll-btn">Enroll Now</a></button>
               <button id="learn" class="btn">learn more</button>
             </div>
             <div class="noti">
               <span class="dots" id="start"></span>
               <span class="date">26th May</span>
               <span class="dots" id="end"></span>
-              <span class="date">8th June</span>
+              <span class="date">23rd June</span>
             </div>
           </div>
       </section>
@@ -56,42 +56,206 @@
 
       <!-- what is interprenuer block -->
       <section id="event-info">
-        <div class="heading">what is <span id="intern">Internprenuer</span>?</div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, vel? Molestias iusto fugiat, labore distinctio quos fuga dolore minus debitis! Ea nesciunt aperiam soluta veniam similique sapiente eaque dignissimos natus!
-        Repellendus fuga labore quia voluptatum similique numquam architecto voluptatem qui corrupti necessitatibus cumque quis odit assumenda commodi eveniet ex ipsa nostrum, tenetur quod repellat? Est facere dolore unde nam inventore?</p>
+        <div class="heading">what is <span id="intern">Internprenuer</span> ?</div>
+        <div class="text-wrapper">
+          <div class="text">
+            A comprehensive 4-week online <b>Internship program</b> designed for <i><b>aspiring coders</b></i>.
+          </div>
+          <div class="text">
+            This program is <b>perfect</b> for individuals who want to transform their <b>passion for coding</b> into a fulfilling web development career. 
+          </div>
+          <div class="text">
+            Throughout the program,
+           you'll <b>gain mastery</b> over the essential building blocks of <b>web development.</b> 
+          </div>
+          <div class="text">
+            And by the program's conclusion,
+           you'll have a <b>strong foundation in web development</b> and a portfolio website showcasing your newfound skills.
+          </div>
+           <div class="text">
+            Additionally, you'll receive a <b>valuable internship certificate</b> to boost your resume and <b>stand out</b> in the job market.
+           </div>
+        </div>
         <button id="detail-btn">See Details</button>
       </section>
 
       <!-- divider shape block  -->
-      <section class="triangle" id="after-event">
-      <div class="triangle-top">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-        </svg>
-    
+      <section id="after-event" class="tilt0">
+        <div class="tilt0-top">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          </svg>
+      </div>
       </section>
 
+      <!-- details section -->
       <section id="details">
-        <div class="heading">Details</div>
-        <div class="box odd">
+        <div class="learn">
+        <div class="details-heading">You'll learn</div>
+        <div class="imp0">
+          <div class="box" data-color="227, 79, 38">
+            <div class="text">
+              <span class="title">HTML</span>
+            </div>
+          </div>
+          <div class="box" data-color="21, 114, 182">
+            <div class="text">
+              <span class="title">CSS</span>
+            </div>
+          </div>
+          <div class="box" data-color="247, 223, 30">
+            <div class="text">
+              <span class="title">JAVASCRIPT</span>
+            </div>
+          </div>
+          <div class="box" data-color="6, 182, 212">
+            <div class="text">
+              <span class="title">TailWind</span>
+            </div>
+          </div>
+        </div>
+        <div class="details-heading h2">Timings</div>
+        <div class="imp">
+          <div class="box imp-box" data-color="247, 180, 11">
+            <i data-lucide="calendar-range"></i>
+            <div class="text">
+              <span class="title">Date : </span>
+              <span class="text"> 26th May - 23rd June 2024</span>
+            </div>
+          </div>
+          <div class="box imp-box" data-color="11, 247, 62">
             <i data-lucide="clock"></i>
-          <div class="text">loooooooooooong text</div>
+            <div class="text">
+              <span class="title">Time : </span>
+              <span class="text">08:00 PM - 09:00 PM IST</span>
+            </div>
+          </div>
+          <div class="box imp-box" data-color="247, 11, 196">
+            <i data-lucide="calendar-clock"></i>
+            <div class="text">
+              <span class="title">Duration :</span>
+              <span class="text"> 4 Weeks </span>
+            </div>
+          </div>
         </div>
-        <div class="box even">
-          <i data-lucide="calendar-days"></i>
-          <div class="text">loooooooooooong text</div>
         </div>
-        <div class="box odd">
-          <div class="icon">icon</div>
-          <div class="text">loooooooooooong text</div>
+        <div class="learn">
+        <div class="details-heading">Perks & benifits</div>
+        <div class="box" data-color="11, 247, 62">
+          <i data-lucide="handshake"></i>
+          <div class="text">
+            <span class="title">Beginner Friendly</span>
+          </div>
         </div>
-        <div class="box even">
-          <div class="icon">icon</div>
-          <div class="text">loooooooooooong text</div>
+        <div class="box" data-color="247, 180, 11">
+          <i data-lucide="book-open-check"></i>
+          <div class="text">
+            <span class="title">Detailed & Comprehensive</span>
+          </div>
         </div>
+        <div class="box" data-color="255,0,0">
+          <i data-lucide="users"></i>
+          <div class="text">
+            <span class="title">Assistance & guidence</span>
+          </div>
+        </div>
+        <div class="box" data-color="247, 180, 11">
+          <i data-lucide="messages-square"></i>
+          <div class="text">
+            <span class="title">Interactive</span>
+          </div>
+        </div>
+        <div class="box" data-color="255,0,0">
+          <i data-lucide="video"></i>
+          <div class="text">
+            <span class="title">Live Sessions</span>
+          </div>
+        </div>
+        <div class="box" data-color="11, 247, 62">
+          <i data-lucide="file-badge"></i>
+          <div class="text">
+            <span class="title">Internship Certificate At the End</span>
+          </div>
+        </div>
+        <div class="box" data-color="247, 180, 11">
+          <i data-lucide="target"></i>
+          <div class="text">
+            <span class="title">Practice based Learning</span>
+          </div>
+        </div>
+        <div class="box" data-color="11, 247, 62">
+          <i data-lucide="hand-coins"></i>
+          <div class="text">
+            <span class="title">cost friendly</span>
+          </div>
+        </div>
+      </div>
       </section>
-    </div>
 
+      <!-- divider section -->
+      <section id="after-details" class="tilt">
+        <div class="tilt-top">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          </svg>
+      </div>
+      </section>
+
+      <!-- enroll section block -->
+      <section id="enroll-box">
+        <div class="heading">In Short...</div>
+        <ul id="points">
+          <li>
+            If you want to learn web-Development... 
+          </li>
+          <li>
+            if you don't want to learn just theory...  
+          </li>
+          <li>
+            if you want detailed & comprehensive web-deveolpment course...
+          </li>
+        </ul>
+        <div class="action-call">then <span>why</span> are you waiting?</div>
+        <a href="https://forms.gle/kAkDm3HbGGZoMSfC9" target="_blank" class="action-btn">
+          <div class="box">
+            <div class="rotate">
+              <i data-lucide="lock-open"></i>
+            </div>
+            <div class="text">Unlock YOur potential with <span class="tsig-text-btn">TSIG</span></div>
+          </div>
+        </a>
+        
+      </section>
+
+      <!-- divider break -->
+      <section class="book-like" id="before-footer">
+        <div class="book-di">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+          </svg>
+      </div>
+    </section>
+
+    <!-- footer secion -->
+    <section id="foot">
+      <div id="links-box">
+        <a href="#" data-color="rgb(247, 180, 11)"><i data-lucide="mail" ></i></a>
+        <a href="#" data-color="rgb(11, 78, 247)"><i data-lucide="linkedin"></i></a>
+        <a href="" data-color="rgba(255,0255,0255,0.5)"><i data-lucide="github" ></i></a>
+        <a href="#" data-color="rgb(247, 11, 196)"> <i data-lucide="instagram" ></i></a>
+      </div>
+      <div id="foot-box">
+        <div class="location">
+          <i data-lucide="building-2"></i>
+          TSIG LAB, mjcet Block-5
+        </div>
+        <div class="copy">
+          copyright@2024
+        </div>
+      </div>
+    </section>
+    </div>
+      
     <script type="module" src="/main.js"></script>
   </body>
 </html>

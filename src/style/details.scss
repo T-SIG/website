@@ -1,33 +1,116 @@
 @use './base';
 
 #details{
-    @include flex(center,center,column,nowrap,clamp(10px,2svw,1.2svw));
+    @include flex(center,center,row,wrap,clamp(10px,5svw,5svw));
     background: rgba($secondary-color,0.9);
     padding: 1%;
-    width: 100%;
+
+    .imp{
+        @include flex(center,center,row,nowrap,2svw);
+        width: 100%;
+    }
+    .h2{
+        scale: 0.6;
+    }
+    .imp0{
+        @extend .imp;
+        flex-wrap: wrap;
+        .box{
+            position: relative;
+            font-family: $martian;
+            letter-spacing: 5px;
+            font-weight:700;
+            font-size: clamp(30px,2svw,3svw);
+            justify-content: space-evenly;
+            min-width: 25%;
+            word-wrap: break-word;
+            text-transform: uppercase;
+        }
+        .lang{
+            flex-wrap: wrap;
+        }
+    }
+    .imp-box{
+        text-transform: uppercase;
+        font-family: $martian;
+        font-weight: 500;
+        text-align: left;
+        font-size: clamp(14px,1svw,3svw);
+    }
+    @media (max-width: 400px) {
+        .imp-box{
+            min-height: 16svh;
+        }
+    }
+    @media (min-width: 400px) and (max-width:900px) {
+        .imp-box{
+            min-height: 10svh;
+        }
+    }
+    &::after,&::before{
+        content: "";
+        min-height: 30px;
+        width: 100%;
+        z-index: 999;
+    }
 }
-
+.details-heading{
+    @extend .heading;
+    font-weight: 500;
+    width: 100%;
+    font-size: clamp(24px,3svw,3.5svw);
+}
 .box{
-
     background: rgba($white,0.2);
     border: rgba($white,0.5) 0.1svw solid;
     border-radius: clamp(4px,0.4svw,0.8svw);
 
-    width: 50%;
-    padding: clamp(8px,1.2svw,2svw);
+    padding: clamp(2px,1.2svw,2svw);
+    position: relative;    
 
-    
-    @include flex(none,center,row,wrap);
-    gap:2svw;
+    font-size: clamp(12px,1.2svw,2svw);
+    font-weight: 450;
+    @include flex(center,center,row,wrap,1svw);
+    text-align: center;
+    text-transform: capitalize;
+
+    .icons{
+        height: clamp(20px,2svw,3svw);
+        aspect-ratio: 1;
+        stroke-width: 2;
+    }
+    .text,.title{
+        z-index: 99;
+    }
 }
-.odd{
-    margin-left: 30%;
-    align-self: flex-start;
-    align-content: flex-start;
-}
-.even{
-    margin-right: 30%;
-    align-self: flex-end;
-    align-content: end;
-    flex-direction: row-reverse;
-}
+
+    // card bg hover
+    .box:hover::before{
+        opacity: 1;
+    }
+    .box::before{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: inherit;
+        content: "";
+
+        left: 0;
+        top: 0;
+        z-index: 0;
+
+        background: radial-gradient(
+            800px circle at var(--mx) var(--my),
+            rgba(var(--data-color), 0.5),
+            transparent 40%
+        );
+        opacity: 0;
+        transition: all ease 500ms;
+    }
+
+.learn{
+    height: 50%;
+    @include flex(center,center,row,wrap,clamp(10px,2svw,1.2svw));
+
+    width: fit-content;
+    }
