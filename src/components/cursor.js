@@ -32,10 +32,9 @@ export function cursorAnimation() {
       cursor.style.setProperty("--color","white")
     }
     if (cursor.style.getPropertyValue("--color") === "white") {
-      cursor.style.opacity = 0.3
-      // cursor.style.setProperty("--opacity",0.2)
+      cursor.style.setProperty("--opacity",0.3)
     } else {
-      cursor.style.opacity = 0.8
+      cursor.style.setProperty("--opacity",0.8)
     }
     if (e.target.closest(".box")) {
       cursor.style.setProperty("--color",`rgb(${e.target.closest(".box").dataset.color})`)

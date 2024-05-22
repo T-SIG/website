@@ -21,8 +21,7 @@
 
 //cursor animation
 #app:hover > #event-cursor {
-    // opacity: var(--opacity);
-    opacity: 0.2;
+    opacity: var(--opacity);
     
 }
 #event-cursor{
