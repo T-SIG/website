@@ -47,6 +47,7 @@
             border-radius: clamp(4px,8px,24px);
             letter-spacing: clamp(3px,0.3svw,1svw);
             font-size: clamp(8px,1svw,2svw);
+            cursor: pointer;
         }
         #enroll{
             @include bg($primary-color);
