@@ -29,16 +29,15 @@ export function cursorAnimation() {
       cursor.style.setProperty("--color","rgb(247, 180, 11)")
     }
     if (e.target.closest("#foot")){
-      cursor.style.setProperty("--color","rgb(255,255,255)")
+      cursor.style.setProperty("--color","white")
     }
-    if (cursor.style.getPropertyValue("--color") === "rgb(255,255,255)" || cursor.style.getPropertyValue("--color") === "white") {
-      cursor.style.opacity = 0.4
+    if (cursor.style.getPropertyValue("--color") === "white") {
+      cursor.style.setProperty("--opacity",0.3)
     } else {
-      cursor.style.opacity = 0.8
+      cursor.style.setProperty("--opacity",0.8)
     }
     if (e.target.closest(".box")) {
       cursor.style.setProperty("--color",`rgb(${e.target.closest(".box").dataset.color})`)
-      console.log(e.target.closest(".box"));
     }
   };
 

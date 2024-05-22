@@ -39,6 +39,7 @@
 }
 
 #detail-btn{
+    @extend .pointer;
     all: unset;
     margin: 1svw;
     background: rgba($secondary-color,0.9);

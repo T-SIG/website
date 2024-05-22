@@ -62,7 +62,7 @@
                 background: $secondary-color;
                 color: $white;
                 .rotate{
-                    rotate: -15deg;
+                    rotate: -10deg;
                 }
                 .tsig-text-btn{
                     color: $primary-color;
@@ -77,15 +77,15 @@
         i{
             @extend .icons;
         }
+        $transition-time:600ms;
         .rotate{
-            
-            transition: all ease 800ms;
+            transition: all ease $transition-time;
         }
         .tsig-text-btn{
             color: $secondary-color;
             font-size: clamp(16px,1.5svw,3svw);
             font-weight: 800;
-            transition: all ease 800ms;
+            transition: all ease $transition-time;
         }
     }
 

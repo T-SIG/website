@@ -3,13 +3,14 @@
     position: relative;
     a{
         all: unset;
+        cursor: pointer;
 
     }
     #links-box{
         @include flex(center,space-evenly,row,wrap,clamp(16px,2svw,2svw));
         font-family: $martian;
         font-weight: 200;
-
+        
         // defined for icons that are linked in footer
         .icons:hover,.icons:active,.icons:focus{
                 $color: var(--color);
@@ -24,12 +25,14 @@
         font-family: $martian;
         font-weight: 200;
         font-size: clamp(12px,1svw,3svw);
-        margin-bottom: 10px;
         text-transform: uppercase;
     }
     .location{
         @include flex(space-evenly,flex-end,row,wrap);
         transition: all ease 500ms;
+        padding: 8px;
+        border-radius: 8px;
+        animation: foot-pan 10s linear 0s infinite;
         // building icon
         .icons{
             height: clamp(20px,1.2svw,3svw);
@@ -40,7 +43,6 @@
         }
     }
     .copy{
-        margin: 5px;
         letter-spacing: 5px;
         color: rgba($white,0.7);
         font-size: clamp(8px,0.8svw,3svw);
@@ -55,9 +57,9 @@
         transition: all ease 500ms;
     }
     &::after{
-        margin: 10px;
+        margin-bottom: 3px;
         
-        color: rgba($white,0.1);
+        color: rgba($white,0.08);
         opacity: 0;
 
         font-size: clamp(10px,1svw,3svw);
@@ -65,12 +67,9 @@
 
         text-transform: uppercase;
 
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        transition: all ease 500ms;
+        transition: all ease 1200ms;
         content: "made by ateeb ansari";
+        
     }
     &:hover::after{
         opacity: 1;

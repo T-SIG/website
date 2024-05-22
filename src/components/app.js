@@ -1,40 +1,14 @@
 import { cursor } from "./cursor"
 import { home} from "./home"
-import { createIcons, Clock,CalendarRange, BookOpenCheck, Handshake, Users, Video, MessagesSquare, FileBadge, CalendarClock, Target, HandCoins, ReceiptIndianRupee, IndianRupee, LockOpen, Linkedin, Github, Instagram, Mail, Building2, } from "lucide"
+import { createLucideIcons } from "./createIcons"
 
 export function app() {
     const bannerBox = document.getElementById("bannerBox")
     const gridBlob = document.getElementById("grid-blob")
+    const iconsSVG = createLucideIcons
 
-    createIcons({
-        icons: {
-            Clock,
-            CalendarRange,
-            BookOpenCheck,
-            Handshake,
-            Users,
-            Video,
-            MessagesSquare,
-            FileBadge,
-            CalendarClock,
-            Target,
-            HandCoins,
-            ReceiptIndianRupee,
-            IndianRupee,
-            LockOpen,
-            Linkedin,
-            Github,
-            Instagram,
-            Mail,
-            Building2,
-        },
-        attrs:{
-            class: ["icons","lucide"],
-            height: "",
-            width: "",
-        }
-    })
 
+    // footer hover color
     const icons = document.getElementById("links-box").querySelectorAll(".icons")
     icons.forEach((e)=>{
         let color = e.parentElement.dataset.color;

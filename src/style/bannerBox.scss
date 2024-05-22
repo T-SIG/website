@@ -31,8 +31,8 @@
         all: unset;
     }
     #brand{
-        font-weight: 500;
-        font-size: clamp(10px,2svw,6svw);
+        font-weight: 650;
+        font-size: clamp(15px,2.5svw,2.5svw);
         margin-block: 1svw;
         letter-spacing: clamp(3px,0.6svw,1svw);
         color: $primary-color;
@@ -47,6 +47,7 @@
             border-radius: clamp(4px,8px,24px);
             letter-spacing: clamp(3px,0.3svw,1svw);
             font-size: clamp(8px,1svw,2svw);
+            cursor: pointer;
         }
         #enroll{
             @include bg($primary-color);

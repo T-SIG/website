@@ -1,4 +1,3 @@
-import { siJavascript, siSimpleicons } from "simple-icons";
 import { cursorAnimation } from "./cursor";
 import { handleDecryptionAnimation } from "./handleDecAni";
 import { cols, createGrid, rows} from "/src/components/grid"
@@ -38,7 +37,8 @@ detailBtn.addEventListener("click",(e)=>{
 
 // intern animation
 const intern = document.getElementById("intern")
-intern.onmouseover = e => {handleDecryptionAnimation(intern,"Interprenuer")}
+const orignalText = intern.dataset.value
+intern.onmouseover = e => {handleDecryptionAnimation(intern,orignalText)}
 
 //main cursor animation
 cursorAnimation()

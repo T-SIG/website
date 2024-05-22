@@ -3,12 +3,6 @@
     margin: 0;
     position: relative;
     overflow: hidden;
-
-    &:hover{
-        #event-cursor{
-            background: red;
-        }
-    }
 }
 #black-tint{
     position: absolute;
@@ -27,7 +21,7 @@
 
 //cursor animation
 #app:hover > #event-cursor {
-    opacity: 0.4;
+    opacity: var(--opacity);
     
 }
 #event-cursor{
@@ -47,4 +41,7 @@
     opacity: 0;
     transition: all 300ms linear;
     filter: blur(20px);
+}
+.pointer{
+    cursor: pointer;
 }
