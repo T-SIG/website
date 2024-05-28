@@ -42,6 +42,7 @@
         scale: 0.8;
         font-weight: 500;
         margin-top: 50px;
+        
     }
     .action-btn{
         all: unset;
@@ -50,6 +51,7 @@
         .box{
             @extend .box;
             border: none;
+            cursor: not-allowed;
             background: $primary-color;
             width: fit-content;
             font-weight: 600;
@@ -58,7 +60,7 @@
             text-transform: uppercase;
             letter-spacing: clamp(4px,0.4svw,1svw);
             transition: all ease 800ms;
-            &:hover,&:active,&:focus{
+            &:hover,&:focus{
                 background: $secondary-color;
                 color: $white;
                 .rotate{
@@ -72,7 +74,6 @@
                 height: 0;
                 width: 0;
             }
-
         }
         i{
             @extend .icons;

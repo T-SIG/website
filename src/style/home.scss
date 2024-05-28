@@ -45,3 +45,46 @@
 .pointer{
     cursor: pointer;
 }
+
+
+.status-banner{
+
+    @include flex();
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+
+    color: $primary-color;
+    margin-top: 10px; 
+    padding: 8px;
+    padding-inline: 20px;
+    background: rgba($primary-color,0.2);
+    border: 1px solid $primary-color;
+    border-radius: 8px;
+
+    font-family: $martian;
+    font-weight: 300;
+    font-size: clamp(12px,01svw,1.8svw);
+    text-align: center;
+
+
+    .dots{
+        min-height: 5px;
+        height: 0.5svw;
+        aspect-ratio: 1;
+        display: inline-block;
+        border-radius: 100%;
+        background: $primary-color;
+        animation: warn 2s ease-in-out 0s infinite alternate;    
+    }
+}
+@keyframes warn{
+    to{
+        box-shadow: 0 0 16px 4px $primary-color;
+    }
+    from {
+        box-shadow: 0 0 16px 0px $primary-color;
+    }
+}
