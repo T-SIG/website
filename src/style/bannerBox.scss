@@ -50,7 +50,6 @@
             cursor: pointer;
         }
         #enroll{
-            cursor:not-allowed;
             @include bg($primary-color);
             color: $balck;
             font-weight: 700;
