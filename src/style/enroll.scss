@@ -60,6 +60,7 @@
             letter-spacing: clamp(4px,0.4svw,1svw);
             transition: all ease 800ms;
             &:hover,&:focus{
+                cursor: not-allowed;
                 background: $secondary-color;
                 color: $white;
                 .rotate{
