@@ -1,4 +1,4 @@
-@use "/src/style/base";
+@use "base";
 
 #event-info {
     @include flex(center, center, column, wrap, 10px);

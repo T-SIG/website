@@ -1,4 +1,4 @@
-@use '/src/style/base';
+@use 'base';
 #home{
     margin: 0;
     position: relative;
@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    @include bg(
+    @include base.bg(
         radial-gradient(
         ellipse at center,
         transparent,
