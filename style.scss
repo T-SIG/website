@@ -1,32 +1,32 @@
 // base css
-@import '/src/style/base';
+@import 'src/style/base.scss';
 
 //home 
-@import '/src/style/home.scss';
+@import 'src/style/home.scss';
 
 // grid 
-@import '/src/style/grid.scss';
+@import 'src/style/grid.scss';
 
 // grid bg blob
-@import '/src/style/grid-blob.scss';
+@import 'src/style/grid-blob.scss';
 
 // abnner box
-@import '/src/style/bannerBox.scss';
+@import 'src/style/bannerBox.scss';
 
 
 //divider-top
-@import '/src/style/divider.scss';
+@import 'src/style/divider.scss';
 
 // event-info
-@import '/src/style/eventInfo.scss';
+@import 'src/style/eventInfo.scss';
 
 
 //details section
-@import './src/style/details.scss';
+@import 'src/style/details.scss';
 
 
 // enroll section
-@import './src/style/enroll.scss';
+@import 'src/style/enroll.scss';
 
 // footer 
 @import './src/style/foot.scss';

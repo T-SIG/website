@@ -1,4 +1,4 @@
-@use './base';
+@use 'base';
 
 #details{
     @include flex(center,center,row,wrap,clamp(10px,5svw,5svw));

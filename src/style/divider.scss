@@ -1,4 +1,4 @@
-@use '/src/style/base';
+@use 'base';
 $alpha:0.9;
 .divider{
     @include bg($primary-color,$alpha);

@@ -1,4 +1,4 @@
-@use '/src/style/base';
+@use 'base';
 
 #bannerBox{
     @include flex(center,center,column,nowrap,0.8svw);
@@ -18,7 +18,7 @@
         .primary{
             color: $primary-color;
         }
-        color: white;
+        color: rgb(255, 255, 255);
         font-size: clamp(30px,6svw,8svw);
         font-weight: 600;
     }
