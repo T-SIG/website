@@ -7,7 +7,13 @@ export default {
   /* the lines between these comments */
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily :{
+        martian : ["Martian Mono", "monospace"],
+        sora : ["Sora", "sans-serif"],
+        urbanist : ["Urbanist","sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
