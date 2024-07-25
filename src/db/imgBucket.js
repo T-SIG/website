@@ -1,33 +1,34 @@
+import * as imgUrl from '../assets/index.js'
 const imgWithTitle = [
   {
     title: "flower pot",
-    url: "/src/assets/img6.webp",
+    url: imgUrl.img6,
   },
   {
     title: "laptop stand",
-    url: "/src/assets/img2.webp",
+    url: imgUrl.img2,
   },
   {
     title: "keychains",
-    url: "/src/assets/img3.webp",
+    url: imgUrl.img3,
   },
   {
     title: "flower pot 2",
-    url: "/src/assets/img1.webp",
+    url: imgUrl.img1,
   },
 
   {
     title: "flower pot 3",
-    url: "/src/assets/img5.webp",
+    url: imgUrl.img5,
   },
   {
     title: "mobile stand",
-    url: "/src/assets/img4.webp",
+    url: imgUrl.img4,
   },
 
   {
     title: "flower pot 4",
-    url: "/src/assets/img7.webp",
+    url: imgUrl.img7,
   },
 ];
 export default imgWithTitle;
