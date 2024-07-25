@@ -2,7 +2,7 @@ import TextBanner from "./TextBanner";
 import { tags } from "../../db/tags";
 import { nanoid } from "nanoid";
 function Showcase() {
-  const handleClick = (e) => {
+  const handleClick = () => {
     let pos = document.getElementById("divider");
     window.scrollTo({
       top: pos.offsetTop ,
