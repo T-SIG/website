@@ -1,5 +1,6 @@
 import ItemCard from "./ItemCard";
-
+import imgdb from '../../db/imgBucket.js'
+import { nanoid } from "nanoid";
 function ItemWall() {
   return (
     <div className="grid grid-flow-row p-2 gap-2 bg-emerald-500">
@@ -7,15 +8,9 @@ function ItemWall() {
         Products at Glance...
       </span>
       <div className="flex flex-wrap justify-center items-center p-4 gap-4">
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-
-        <ItemCard />
-        <ItemCard />
+    {
+      imgdb.map((img)=>(<ItemCard key={nanoid()} imgUrl={img?.url} title={img?.title}/>))
+    }
       </div>
     </div>
   );
