@@ -22,7 +22,7 @@ function Home() {
       </div>
 
       <ItemWall />
-      <div className="">
+      <div className="bg-zinc-900">
         <svg
         fill="rgb(16 185 129)"
           xmlns="http://www.w3.org/2000/svg"

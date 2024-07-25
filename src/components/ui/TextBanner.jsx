@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 
 function TextBanner({text="Text",className=""}) {
   return (

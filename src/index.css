@@ -6,3 +6,6 @@ body{
     font-family: "Sora",sans-serif;
 }
 
+.foot-icon{
+    @apply hover:scale-110 ease-linear duration-200
+}
