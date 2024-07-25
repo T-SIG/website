@@ -5,8 +5,7 @@ function Home() {
   return (
     <div className="w-full min-h-screen bg-zinc-900 text-zinc-100">
       <div className="h-screen flex items-center justify-center bg-blue-700">
-
-      <Showcase />
+        <Showcase />
       </div>
 
       <div id="divider" className="bg-emerald-500">
@@ -22,14 +21,16 @@ function Home() {
       </div>
 
       <ItemWall />
-      <div className="bg-zinc-900">
+      <div class="bg-zinc-900">
         <svg
-        fill="rgb(16 185 129)"
+          fill="rgb(16 185 129)"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
         >
-          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z"></path>
+          <path
+             d="M1200 0L0 0 598.97 114.72 1200 0z" >
+          </path>
         </svg>
       </div>
     </div>
