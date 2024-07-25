@@ -26,7 +26,5 @@ export const createLucideIcons = createIcons({
     },
     attrs:{
         class: ["icons","lucide"],
-        height: "",
-        width: "",
     }
 })

@@ -47,31 +47,8 @@
         color: rgba($white,0.7);
         font-size: clamp(8px,0.8svw,3svw);
     }
-
-    // defined for whole footer
-    .icons{
-        height: clamp(28px,2svw,3svw);
-        aspect-ratio: 1;
-        stroke: rgba($white,1);
-        stroke-width: 1;
-        transition: all ease 500ms;
-    }
     &::after{
-        margin-bottom: 3px;
-        
-        color: rgba($white,0.08);
-        opacity: 0;
-
-        font-size: clamp(10px,1svw,3svw);
-        font-family: $martian;
-
-        text-transform: uppercase;
-
-        transition: all ease 1200ms;
-        content: "made by ateeb ansari";
-        
+        content: "";
     }
-    &:hover::after{
-        opacity: 1;
-    }
+
 }

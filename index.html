@@ -1,18 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./public/tsig.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IOT 2024</title>
-    <link rel="stylesheet" href="compile.css">
-    <link rel="stylesheet" href="compile.css.map">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css.map">
-
-
-
-
   </head>
   <body>
     <div id="app">
@@ -20,37 +12,48 @@
       <!-- landing page or the home page -->
       <section id="home">
         <!-- grid parent -->
-          <div id="grid"></div>
+        <div id="grid"></div>
 
-          <!-- the gradient blob that is just above the grid -->
-          <div id="grid-blob"></div>
+        <!-- the gradient blob that is just above the grid -->
+        <div id="grid-blob"></div>
 
-          <!-- the gradient effect to black-out the grid from the edges -->
-          <div id="black-tint"></div>
+        <!-- the gradient effect to black-out the grid from the edges -->
+        <div id="black-tint"></div>
 
-          <div class="status-banner" ><span class="dots" id="start"></span></div>
-          <!-- main content of the homepage such as event name,lab name,company name -->
-          <div id="bannerBox">
-            
-            <div class="tsig-text">tsig</div>
-            <div id="event-name">
-              <span class="primary">IOT</span> 2024
-            </div>
-            <div class="p"></div>
-            <div id="brand"></div>
+        <div class="status-banner">
+          <span class="dots" id="start"></span>
 
-            <!-- action btn's div' -->
-            <div class="btns ">
-              <button id="enroll" class="btn"><a href="https://forms.gle/SYWfnxAqvcyeMcoZ7" target="_blank" id="enroll-btn">Enroll Now</a></button>
-              <button id="learn" class="btn">learn more</button>
-            </div>
-            <div class="noti">
-              <span class="dots" id="start"></span>
-              <span class="date">25th July</span>
-              <span class="dots" id="end"></span>
-              <span class="date">26th July</span>
-            </div>
+          <!-- update this link and set it to working site of 3d corner -->
+          <a target="_blank" href="#" data-color="rgb(247, 11, 196)">
+            Checkout TSIG 3D corner
+          </a>
+        </div>
+        <!-- main content of the homepage such as event name,lab name,company name -->
+        <div id="bannerBox">
+          <div class="tsig-text">tsig</div>
+          <div id="event-name"><span class="primary">IOT</span> 2024</div>
+          <div class="p"></div>
+          <div id="brand"></div>
+
+          <!-- action btn's div' -->
+          <div class="btns">
+            <button id="enroll" class="btn">
+              <a
+                href="https://forms.gle/SYWfnxAqvcyeMcoZ7"
+                target="_blank"
+                id="enroll-btn"
+                >Enroll Now</a
+              >
+            </button>
+            <button id="learn" class="btn">learn more</button>
           </div>
+          <div class="noti">
+            <span class="dots" id="start"></span>
+            <span class="date">25th July</span>
+            <span class="dots" id="end"></span>
+            <span class="date">26th July</span>
+          </div>
+        </div>
       </section>
 
       <!-- divider shape block 
@@ -99,184 +102,158 @@
       <!-- details section -->
       <section id="details">
         <div class="learn">
-        <div class="details-heading">You'll learn</div>
-        <div class="imp0">
-          <div class="box" data-color="227, 79, 38">
-            <div class="text">
-              <span class="title">Arduino Basics</span>
+          <div class="details-heading">You'll learn</div>
+          <div class="imp0">
+            <div class="box" data-color="227, 79, 38">
+              <div class="text">
+                <span class="title">Arduino Basics</span>
+              </div>
+            </div>
+            <div class="box" data-color="21, 114, 182">
+              <div class="text">
+                <span class="title">Node MCU</span>
+              </div>
+            </div>
+            <div class="box" data-color="247, 223, 30">
+              <div class="text">
+                <span class="title">IOT</span>
+              </div>
+            </div>
+            <div class="box" data-color="6, 182, 212">
+              <div class="text">
+                <span class="title">IOT projects</span>
+              </div>
             </div>
           </div>
-          <div class="box" data-color="21, 114, 182">
-            <div class="text">
-              <span class="title">Node MCU</span>
+          <div class="details-heading h2">Timings</div>
+          <div class="imp">
+            <div class="box imp-box" data-color="247, 180, 11">
+              <div class="text">
+                <span class="title">Date : </span>
+                <span class="text"> 25th July - 26th July 2024</span>
+              </div>
+            </div>
+            <div class="box imp-box" data-color="11, 247, 62">
+              <div class="text">
+                <span class="title">Time : </span>
+                <span class="text">2:00 PM - 5:00 PM IST</span>
+              </div>
+            </div>
+            <div class="box imp-box" data-color="247, 11, 196">
+              <div class="text">
+                <span class="title">Duration :</span>
+                <span class="text"> 2 Days </span>
+              </div>
             </div>
           </div>
-          <div class="box" data-color="247, 223, 30">
-            <div class="text">
-              <span class="title">IOT</span>
-            </div>
-          </div>
-          <div class="box" data-color="6, 182, 212">
-            <div class="text">
-              <span class="title">IOT projects</span>
-            </div>
-          </div>
-        </div>
-        <div class="details-heading h2">Timings</div>
-        <div class="imp">
-          <div class="box imp-box" data-color="247, 180, 11">
-            <i data-lucide="calendar-range"></i>
-            <div class="text">
-              <span class="title">Date : </span>
-              <span class="text"> 25th July - 26th July 2024</span>
-            </div>
-          </div>
-          <div class="box imp-box" data-color="11, 247, 62">
-            <i data-lucide="clock"></i>
-            <div class="text">
-              <span class="title">Time : </span>
-              <span class="text">2:00 PM - 5:00 PM IST</span>
-            </div>
-          </div>
-          <div class="box imp-box" data-color="247, 11, 196">
-            <i data-lucide="calendar-clock"></i>
-            <div class="text">
-              <span class="title">Duration :</span>
-              <span class="text"> 2 Days </span>
-            </div>
-          </div>
-        </div>
         </div>
         <div class="learn">
-        <div class="details-heading">Perks & benifits</div>
-        <div class="box" data-color="11, 247, 62">
-          <i data-lucide="handshake"></i>
-          <div class="text">
-            <span class="title">Beginner Friendly</span>
+          <div class="details-heading">Perks & benifits</div>
+          <div class="box" data-color="11, 247, 62">
+            <div class="text">
+              <span class="title">Beginner Friendly</span>
+            </div>
           </div>
-        </div>
-        <div class="box" data-color="247, 180, 11">
-          <i data-lucide="book-open-check"></i>
-          <div class="text">
-            <span class="title">Detailed & Comprehensive</span>
+          <div class="box" data-color="247, 180, 11">
+            <div class="text">
+              <span class="title">Detailed & Comprehensive</span>
+            </div>
           </div>
-        </div>
-        <div class="box" data-color="255,0,0">
-          <i data-lucide="users"></i>
-          <div class="text">
-            <span class="title">Assistance & guidence</span>
+          <div class="box" data-color="255,0,0">
+            <div class="text">
+              <span class="title">Assistance & guidence</span>
+            </div>
           </div>
-        </div>
-        <div class="box" data-color="247, 180, 11">
-          <i data-lucide="messages-square"></i>
-          <div class="text">
-            <span class="title">Interactive</span>
+          <div class="box" data-color="247, 180, 11">
+            <div class="text">
+              <span class="title">Interactive</span>
+            </div>
           </div>
-        </div>
-        <div class="box" data-color="255,0,0">
-          <i data-lucide="video"></i>
-          <div class="text">
-            <span class="title">Live Sessions</span>
+          <div class="box" data-color="255,0,0">
+            <div class="text">
+              <span class="title">Live Sessions</span>
+            </div>
           </div>
-        </div>
-        <!--<div class="box" data-color="11, 247, 62">
-          <i data-lucide="file-badge"></i>
+          <!--<div class="box" data-color="11, 247, 62">
+          
           <div class="text">
             <span class="title">Internship Certificate At the End</span>
           </div>
         </div> -->
-        <div class="box" data-color="247, 180, 11">
-          <i data-lucide="pencil-ruler"></i>
-          <div class="text">
-            <span class="title">Practice based Learning</span>
+          <div class="box" data-color="247, 180, 11">
+            <div class="text">
+              <span class="title">Practice based Learning</span>
+            </div>
+          </div>
+          <div class="box" data-color="11, 247, 62">
+            <div class="text">
+              <span class="title">Value for money</span>
+            </div>
           </div>
         </div>
-        <div class="box" data-color="11, 247, 62">
-          <i data-lucide="hand-coins"></i>
-          <div class="text">
-            <span class="title">Value for money</span>
-          </div>
-        </div>
-      </div>
       </section>
 
       <!-- divider section -->
       <section id="after-details" class="tilt">
         <div class="tilt-top">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+              class="shape-fill"
+            ></path>
           </svg>
-      </div>
+        </div>
       </section>
 
       <!-- enroll section block -->
       <section id="enroll-box">
         <div class="heading">In Short...</div>
         <ul id="points">
-          <li>
-            Learn the ABCs of electronic components... 
-          </li>
-          <li>
-            IOT with Node MCU...  
-          </li>
-          <li>
-            Empower yourself to bring your innovative  projects to life...
-          </li>
+          <li>Learn the ABCs of electronic components...</li>
+          <li>IOT with Node MCU...</li>
+          <li>Empower yourself to bring your innovative projects to life...</li>
         </ul>
         <div class="action-call">then <span>why</span> are you waiting?</div>
         <a href="" target="_blank" class="action-btn">
           <div class="box pointer">
-            <div class="rotate">
-              <i data-lucide="lock-open"></i>
+            <div class="text">
+              Unlock YOur potential with <span class="tsig-text-btn">TSIG</span>
             </div>
-            <div class="text">Unlock YOur potential with <span class="tsig-text-btn">TSIG</span></div>
-           
           </div>
         </a>
-        
-      
       </section>
 
       <!-- divider break -->
       <section class="book-like" id="before-footer">
         <div class="book-di">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
           </svg>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!-- footer secion -->
-    <section id="foot">
-      <div id="links-box">
-        <a target="_blank" href="mailto:tsig@mjcollege.ac.in" data-color="rgb(247, 180, 11)">
-          <i data-lucide="mail" ></i>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/company/t-signature-mjcet/" data-color="rgb(11, 78, 247)">
-          <i data-lucide="linkedin"></i>
-        </a>
-        <a target="_blank" href="https://github.com/T-SIG" data-color="rgba(255,0255,0255,0.5)">
-          <i data-lucide="github" ></i>
-        </a>
-        <a target="_blank" href="http://twitter.com/tsigmjcet" data-color="#1D9BF0">
-          <i data-lucide="twitter"></i>
-        </a>
-        <a target="_blank" href="https://www.instagram.com/t.sig.mjcet?igsh=MTRoY3gwaXFmaTE4Mw==" data-color="rgb(247, 11, 196)">
-          <i data-lucide="instagram" ></i>
-        </a>
-      </div>
-      <div id="foot-box">
-        <div class="location">
-          <i data-lucide="building-2"></i>
-          TSIG LAB, Block-1 mjcet
+      <!-- footer secion -->
+      <section id="foot">
+        <div id="foot-box">
+          <div class="location">TSIG LAB, Block-1 mjcet</div>
+          <div class="copy">copyright@2024</div>
         </div>
-        <div class="copy">
-          copyright@2024
-        </div>
-      </div>
-    </section>
+      </section>
     </div>
-      
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

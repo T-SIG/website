@@ -56,12 +56,12 @@
     transform: translateX(-50%);
     z-index: 999;
 
-    color: $primary-red;
+    color: $primary-color;
     margin-top: 10px; 
     padding: 8px;
     padding-inline: 20px;
-    background: rgba($primary-red,0.15);
-    border: 1px solid $primary-red;
+    background: rgba($primary-color,0.15);
+    border: 1px solid $primary-color;
     border-radius: 8px;
 
     font-family: $martian;
@@ -75,15 +75,18 @@
         aspect-ratio: 1;
         display: inline-block;
         border-radius: 100%;
-        background: $primary-red;
+        background: $primary-color;
         animation: warn 2s ease-in-out 0s infinite alternate;    
+    }
+    a {
+        color: inherit;
     }
 }
 @keyframes warn{
     to{
-        box-shadow: 0 0 16px 4px $primary-red;
+        box-shadow: 0 0 16px 4px $primary-color;
     }
     from {
-        box-shadow: 0 0 16px 0px $primary-red;
+        box-shadow: 0 0 16px 0px $primary-color;
     }
 }
