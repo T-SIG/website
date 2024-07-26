@@ -25,10 +25,5 @@ const imgWithTitle = [
     title: "mobile stand",
     url: imgUrl.img4,
   },
-
-  {
-    title: "flower pot 4",
-    url: imgUrl.img7,
-  },
 ];
 export default imgWithTitle;

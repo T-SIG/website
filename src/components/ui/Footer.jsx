@@ -8,7 +8,7 @@ import { MapPin } from "lucide-react";
 function Footer() {
   const date = new Date();
   return (
-    <div className="w-full min-h-9 bg-zinc-900 text-zinc-100 flex flex-wrap justify-center items-center text-sm flex-row font-martian gap-2 p-4">
+    <div className="w-full min-h-9 bg-zinc-900 text-zinc-100 flex flex-wrap justify-center items-center text-sm flex-row font-martian gap-2 p-2">
       <span className="inline-flex gap-6 mb-3">
 
       <a target="_blank" href="mailto:tsig@mjcollege.ac.in">{<AtSign size={24} strokeWidth={1} className="foot-icon hover:text-green-500" />}</a>
