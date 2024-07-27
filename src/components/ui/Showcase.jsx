@@ -24,7 +24,7 @@ function Showcase() {
         Custom Print Your desired 3D Objects
       </span>
       <div className="w-full inline-flex items-center justify-center">
-        <a href="#">
+        <a href="https://forms.gle/C7gpEsirGBXbBzfv9">
           <div className="w-fit rounded-xl bg-yellow-500 bg-gradient-to-br to-[#FAD961] from-[#F76B1C] p-4 text-center font-semibold tracking-tight text-zinc-900 font-martian transition-all duration-200 ease-linear hover:scale-105 hover:rotate-2 text-[0.9rem] md:text-[1.1rem] lg:text-[1.4rem]">
             Pre-order now to get 30% discount
           </div>

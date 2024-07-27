@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="w-full min-h-screen bg-zinc-900 text-zinc-100">
       <Showcase />
-      <div id="divider" class="bg-emerald-500">
+      <div id="divider" className="bg-emerald-500">
         <svg
           fill="#1d4ed8"
           xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ function Home() {
         </svg>
       </div>
       <ItemWall />
-      <div class="bg-emerald-500 rotate-180">
+      <div className="bg-emerald-500 rotate-180">
         <svg
           fill="rgb(24 24 27)"
           xmlns="http://www.w3.org/2000/svg"
