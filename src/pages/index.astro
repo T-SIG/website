@@ -32,18 +32,16 @@
     >
       <img src="/logos/optimized_logo.svg" alt="" />
       <span class="text-5xl tracking-[18px] -mr-[18px] font-black">tsig</span>
-      <a href="https://forms.gle/emGm1XVR87g2bsNGA" target="_blank" class="btn">
+      <button type="button" class="btn">
         <strong>explore your potential</strong>
         <div id="container-stars">
           <div id="stars"></div>
         </div>
-
         <div id="glow">
           <div class="circle"></div>
           <div class="circle"></div>
         </div>
-      </a>
-
+      </button>
       <p
         class="text-black/50 hover:text-black underline tracking-widest underline-offset-4"
       >
@@ -260,3 +258,9 @@
     }
   }
 </style>
+<script>
+const btn = document.getElementsByClassName("btn");
+btn[0].onclick = ()=>{
+window.location.href="https://forms.gle/emGm1XVR87g2bsNGA";
+}
+</script>
