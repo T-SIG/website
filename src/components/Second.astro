@@ -1,0 +1,39 @@
+---
+import Card from "./Card.astro";
+const items = [
+  "access to lab",
+  "work on real projects",
+  "growth opportunity",
+  "build network",
+  "explore your potential",
+].sort();
+import Footer from "./Footer.astro";
+---
+
+<section class="h-screen bg-black text-white" id="why-sect">
+  <h1 class="">why join us ?</h1>
+  <section
+    class="w-full flex flex-col items-center justify-center gap-4 h-full"
+  >
+    <div class="grid grid-flow-row place-items-start gap-6">
+      {items.map((text) => <Card text={text} />)}
+    </div>
+  </section>
+  <Footer />
+</section>
+
+<style>
+  * {
+    font-family: "tsig-font", sans-serif;
+  }
+  section {
+    @apply py-32;
+    background-image: url(/logos/pattern_dark.svg);
+    background-repeat: repeat;
+    background-position: center;
+  }
+
+  h1 {
+    @apply text-3xl md:text-6xl font-medium tracking-wide text-center;
+  }
+</style>
