@@ -2,10 +2,10 @@
 import Card from "./Card.astro";
 const items = [
   {
-    text: "isro rover competion - <span class='cus-grad'>top 100 all india</span> ",
+    text: "isro rover competition - <span class='cus-grad'>top 100 all india</span> ",
   },
   {
-    text: "aiesec hackathon <span class='cus-grad'>@iith</span> - honrable mention",
+    text: "aiesec hackathon <span class='cus-grad'>@iith</span> - honorable mention",
   },
   { text: "<span class='cus-grad'>5+</span> r&d projects" },
   { text: "hackrevolution - <span class='cus-grad'>2nd place</span>" },
@@ -16,17 +16,25 @@ const items = [
 import Footer from "../components/Footer.astro";
 ---
 
-<section class="h-screen text-black bg-white" id="achive">
+<section class="max-h-screen text-black bg-white grid grid-rows-[auto_auto_1fr_auto]" id="achive">
   <img class="m-auto aspect-square h-28 mb-10" src="/logos/calli.svg" alt="" />
   <h1 class="font-bold">achievements</h1>
   <section
     class="w-fit ml-6 md:w-full flex flex-col items-center justify-center gap-4 my-16 m-auto"
   >
     <div class="grid grid-flow-row place-items-start gap-6 -mt-4">
-      {items.map((item) => <Card text={item.text} classes="md:font-bold font-bold" src="/logos/move.svg" />)}
+      {
+        items.map((item) => (
+          <Card
+            text={item.text}
+            classes="md:font-bold font-bold"
+            src="/logos/move.svg"
+          />
+        ))
+      }
     </div>
   </section>
-  <Footer />
+  <Footer classes="place-self-end" />
 </section>
 
 <style>
@@ -34,13 +42,10 @@ import Footer from "../components/Footer.astro";
     font-family: "tsig-font", sans-serif;
   }
   #achive {
-    @apply p-4;
+    @apply px-4 pt-4;
   }
 
   h1 {
     @apply text-3xl md:text-6xl tracking-wide text-center;
-  }
-  h3 {
-    font-family: "DecoType Thuluth II";
   }
 </style>

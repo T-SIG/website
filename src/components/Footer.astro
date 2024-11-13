@@ -1,11 +1,23 @@
+---
+import { twMerge } from "tailwind-merge";
+const { classes } = Astro.props;
+---
+
 <section
-  class="border-t border-black/5 font-light text-black/50 px-4 grid place-content-center grid-flow-row p-2 text-xs w-full text-center tracking-widest capitalize gap-2"
+  class={twMerge(
+    "border-t border-black/5 font-light text-black/50 px-4 grid place-content-center grid-flow-row p-2 text-xs w-full text-center tracking-widest capitalize gap-2",classes
+  )}
 >
   <a
     href="https://www.instagram.com/t.sig.mjcet/"
     target="_blank"
-    class="uppercase text-pink-600 flex items-center justify-center gap-1">
-    <img src="/logos/insta.svg" class="aspect-square w-3 stroke-pink-600" alt="">
+    class="uppercase text-pink-600 flex items-center justify-center gap-1"
+  >
+    <img
+      src="/logos/insta.svg"
+      class="aspect-square w-3 stroke-pink-600"
+      alt=""
+    />
     tsig</a
   >
   <div class="">
@@ -15,6 +27,6 @@
 
 <style>
   * {
-    font-family: "Azeret Mono", monospace;
+    font-family: "Geist Mono", monospace;
   }
 </style>
