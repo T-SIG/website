@@ -3,8 +3,9 @@ import { Image } from "astro:assets";
 import "../styles/mainSect.css";
 ---
 
-<section class="min-h-screen flex items-center justify-center flex-col gap-3">
-  <img src="/logos/optimized_logo.svg" alt="" />
+<section class="min-h-screen flex items-center justify-center flex-col gap-3 relative">
+  <img src="/logos/bis.svg" alt="" class="aspect-auto h-10 absolute top-0 mt-10">
+  <img src="/logos/optimized_logo.svg" alt="" id="mainLogo" />
   
   <span class="text-5xl tracking-[18px] -mr-[18px] font-black">tsig</span>
   <button type="button" class="btn" name="form-link">

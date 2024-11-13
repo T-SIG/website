@@ -1,12 +1,10 @@
 section {
     font-family: "tsig-font", sans-serif;
-    background-image: url(/logos/pattern.svg);
-    background-repeat: repeat;
-    background-position: center;
   }
-  img {
+  #mainLogo {
     aspect-ratio: 1;
     @apply h-64;
+    
   }
 
   .btn {
@@ -182,4 +180,10 @@ section {
       transform: scale(0.75);
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
+  }
+
+  .cus-grad {
+    /* background: -webkit-linear-gradient(right,#023e8a,#80ffdb,#03045e); */
+    color: #02c39a;
+    
   }
