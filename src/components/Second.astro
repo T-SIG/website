@@ -10,12 +10,12 @@ const items = [
 ].sort();
 ---
 
-<section class="min-h-screen bg-black text-white mb-10" id="why-sect">
+<section class="h-screen bg-black text-white mb-10" id="why-sect">
   <h1 class="-mt-10">why join us ?</h1>
   <section
     class="w-fit ml-6 md:w-full flex flex-col items-center justify-center gap-4 my-20 m-auto"
   >
-    <div class="grid grid-flow-row place-items-start gap-6 m-auto -mt-28">
+    <div class="grid grid-flow-row place-items-start gap-6 m-auto -mt-20">
       {items.map((text) => <Card text={text} src="/logos/move_wh.svg" />)}
     </div>
   </section>
@@ -36,7 +36,7 @@ const items = [
     font-family: "tsig-font", sans-serif;
   }
   section {
-    @apply py-24;
+    @apply py-16;
   }
 
   h1 {
