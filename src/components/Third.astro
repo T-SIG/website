@@ -20,9 +20,9 @@ import Footer from "../components/Footer.astro";
   <img class="m-auto aspect-square h-28 mb-10" src="/logos/calli.svg" alt="" />
   <h1 class="font-bold">achievements</h1>
   <section
-    class="w-fit ml-6 md:w-full flex flex-col items-center justify-center gap-4 my-20 m-auto"
+    class="w-fit ml-6 md:w-full flex flex-col items-center justify-center gap-4 my-16 m-auto"
   >
-    <div class="grid grid-flow-row place-items-start gap-6">
+    <div class="grid grid-flow-row place-items-start gap-6 -mt-4">
       {items.map((item) => <Card text={item.text} classes="md:font-bold font-bold" src="/logos/move.svg" />)}
     </div>
   </section>
@@ -34,7 +34,7 @@ import Footer from "../components/Footer.astro";
     font-family: "tsig-font", sans-serif;
   }
   #achive {
-    @apply p-8;
+    @apply p-4;
   }
 
   h1 {
