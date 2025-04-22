@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/dev/*"
-  to = "https://internprenuer-5.vercel.app/internprenuer:splat"
-  status = 200
-  force = true
