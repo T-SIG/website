@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/dev/:path*",
-            "destination": "https://internprenuer-5.vercel.app/:path*"
+            "destination": "https://internprenuer-5.vercel.app/dev/:path*"
         }
     ]
 }
