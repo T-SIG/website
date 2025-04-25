@@ -6,7 +6,7 @@ export  default function InViewBasic() {
   return (
     <div className='max-w-2xl m-auto flex gap-px flex-col p-1'>
 
-      <p className='text-pretty font-space text-lg leading-8 tracking-wide'>
+      <p className='text-pretty font-sans text-lg leading-8 tracking-wide'>
           A beginner friendly virtual web development internship and training program offered in collaboration between <strong>TSIG</strong> and <strong>TECHSATH</strong>, A Tech Company that handles web dev projects for clients.
           <br />
          You will work on real word projects and gain experience in the field of web development.

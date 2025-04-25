@@ -12,9 +12,9 @@ export default function Info() {
   ]
 
   return (
-    <section className="bg-spline-blue min-h-screen p-32">
+    <section className="bg-spline-blue p-32">
       <div className="max-w-2xl m-auto flex flex-col gap-8 items-start">
-      <LetterSwapPingPong label="Road Map" className="text-5xl font-bold font-space capitalize m-auto cursor-default" staggerFrom={"first"}  />
+      <LetterSwapPingPong label="Road Map" className="text-5xl font-bold font-sans capitalize m-auto cursor-default" staggerFrom={"first"}  />
       </div>
       <div className="relative w-full overflow-clip">
       <Timeline data={data}/>
