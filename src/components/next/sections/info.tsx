@@ -1,23 +1,30 @@
 import LetterSwapPingPong from "../text/letter-swap-pingpong-anim";
-import { Timeline } from "../ui/timeline";
-
+import TmL from "../ui/tl2"
+import "../../../styles/mainSect.css"
+import { cn } from "../../../lib/utils";
 export default function Info() {
-  const data = [
-    {week : "week-1",title : "HTML", icon : "https://svgl.app/library/html5.svg",content : "Build Strong web foundations"},
-    {week : "week-2",title : "CSS", icon : "https://svgl.app/library/css.svg", content : "Design clean, responsive websites"},
-    {week : "week-3",title : "JavaScript", icon : "https://svgl.app/library/javascript.svg", content:"Brain for the web"},
-    {week : "week-4",title : "Tailwind",icon : "https://svgl.app/library/tailwindcss.svg", content : "Streamline your UI design"},
-    {week : "week-5",title : "React", icon : "https://svgl.app/library/react_light.svg", content : "Dynamic scalable UI's"},
-    {week : "week-6",title : "Projects", icon : "", content : ""}
-  ]
 
   return (
-    <section className="bg-spline-blue p-32">
+    <section className="bg-gray-900 h-screen w-screen scroll-m-12" id="info">
       <div className="max-w-2xl m-auto flex flex-col gap-8 items-start">
-      <LetterSwapPingPong label="Road Map" className="text-5xl font-bold font-sans capitalize m-auto cursor-default" staggerFrom={"first"}  />
+      <LetterSwapPingPong label="Road Map" className="text-5xl font-bold font-sans text-gray-50 capitalize m-auto cursor-default" staggerFrom={"first"}  />
       </div>
-      <div className="relative w-full overflow-clip">
-      <Timeline data={data}/>
+      <div className="relative w-full">
+      <TmL/>
+      </div>
+      <div className="m-auto flex items-center justify-center bg-gray-900 py-12">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeulHoIlovJ0llFgXQfrgeQeTOjVX6_bryhfSH1zN0aHkslhA/viewform?pli=1">
+      <button type="button" className="btn" name="form-link">
+        <strong className="fontl">Register Here</strong>
+        <div id="container-stars">
+          <div id="stars"></div>
+        </div>
+        <div id="glow">
+          <div className="circle"></div>
+          <div className="circle"></div>
+        </div>
+      </button>
+        </a>
       </div>
     </section>
   )

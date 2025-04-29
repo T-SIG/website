@@ -1,7 +1,9 @@
 ---
-import Footer from "..//components/next/ui/footer"
+import Footer from "../components/Footer.astro"
 import Home from "../components/next/internprenuer/page"
 import "../styles/global.css"
+import SplineComp from "../components/spline.jsx"
+import AnimatedButton from "../components/next/ui/cbtn"
 ---
 <html lang="en">
   <head>
@@ -10,7 +12,7 @@ import "../styles/global.css"
   </head>
   <body class="bg-[#BBDDFD]">
       <Home client:visible/>
-      <Footer client:visible/>
+     <Footer/>
   </body>
   <script type="module">
   import Lenis from 'lenis';

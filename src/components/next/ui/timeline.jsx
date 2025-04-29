@@ -23,7 +23,6 @@ export const Timeline = ({
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-
   return (
     <div
       className="text-black font-sans md:px-10 md:mb-64 w-fit m-auto translate-x-32"
@@ -35,7 +34,11 @@ export const Timeline = ({
               className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div
                 className="h-10 absolute left-3 md:left-3 w-10 flex items-center justify-center">
-                  <img src={ item.icon} className={`aspect-square w-10 rounded-md ${item.icon ? "" : "bg-neutral-900 rounded-full"}`} />
+                  {item.icon ?
+                  <img src={ item.icon} className={`aspect-square w-10 rounded-md`} />
+                  :
+                  <div className={`aspect-square w-10 bg-neutral-900 rounded-lg`}/>
+                  }
               </div>
               <h3
                 className={`hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-800 ${(index % 2 ==0 ? "" : "translate-x-[-105%]")} flex flex-col`}>
