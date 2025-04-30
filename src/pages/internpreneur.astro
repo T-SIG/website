@@ -1,9 +1,6 @@
 ---
-import Footer from "../components/Footer.astro"
 import Home from "../components/next/internprenuer/page"
 import "../styles/global.css"
-import SplineComp from "../components/spline.jsx"
-import AnimatedButton from "../components/next/ui/cbtn"
 ---
 <html lang="en">
   <head>
@@ -13,13 +10,4 @@ import AnimatedButton from "../components/next/ui/cbtn"
   <body class="bg-[#BBDDFD]">
       <Home client:visible/>
   </body>
-  <script type="module">
-  import Lenis from 'lenis';
-  const lenis = new Lenis();
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-  </script>
 </html>

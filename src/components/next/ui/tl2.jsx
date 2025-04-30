@@ -153,7 +153,7 @@ const {Icon} = module
             >
               <div className="bg-zinc-800/40 backdrop-blur-md border border-zinc-800/30 rounded-xl p-6">
                 <div className="flex justify-start gap-2 items-center">
-                   {module.src ? <img src= { module.src} className={`aspect-square w-8 rounded-md`}/> : <module.Icon/>}
+                   {/* {module.src ? <img src= { module.src} className={`aspect-square w-8 rounded-md`}/> : <module.Icon/>} */}
                   <h3 className="text-2xl font-bold text-blue-400">{module.title}</h3>
                 </div>
                 <p className="mt-4 text-gray-100 text-lg leading-relaxed max-w-xl">{module.description}</p>
