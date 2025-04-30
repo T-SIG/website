@@ -1,6 +1,9 @@
 ---
+import Footer from "../components/Footer.astro"
 import Home from "../components/next/internprenuer/page"
 import "../styles/global.css"
+import SplineComp from "../components/spline.jsx"
+import AnimatedButton from "../components/next/ui/cbtn"
 ---
 <html lang="en">
   <head>
@@ -9,10 +12,6 @@ import "../styles/global.css"
   </head>
   <body class="bg-[#BBDDFD]">
       <Home client:visible/>
-      <section class="p-16 flex flex-wrap items-centertems justify-center font-mono tracking-wide flex-col m-auto w-fit text-center">
-          <p>Internpreneur 5.0</p>
-          <p>TSIG @{new Date().getFullYear()}</p>
-      </section>
   </body>
   <script type="module">
   import Lenis from 'lenis';

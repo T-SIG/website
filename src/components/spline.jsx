@@ -5,7 +5,7 @@ export default function SplineScene() {
     <>
       <Suspense fallback={null}>
         <Spline
-          scene="https://prod.spline.design/Rt5rpOtYsS3QUJCN/scene.splinecode"
+          scene="/crystal_ball.spline"
         />
       </Suspense>
     </>

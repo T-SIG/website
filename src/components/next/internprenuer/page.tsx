@@ -7,10 +7,10 @@ import "../../../styles/global.css"
 export default function Home() {
   return (
     <main>
-      <div className='min-h-screen flex flex-col items-center justify-center bg-[#BBDDFD] '>
-      <section className='h-[100vh] max-h-screen overflow-x-hidden w-svw max-w-[100vw]'>
+      <div className='flex items-center justify-center h-screen'>
+      <section className='w-svw h-[45svh] lg:h-screen relative'>
         <SplineScene/>
-         <div className="md:1/6 absolute right-0 bottom-0 z-1 h-14 w-full bg-[#BBDDFD] sm:w-1/4" />
+         <div className="md:1/6 absolute right-0 bottom-0 z-1 h-16 w-full bg-[#BBDDFD] sm:w-1/4" />
       </section>
       </div>
       <Intro/>
