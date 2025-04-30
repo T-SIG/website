@@ -5,14 +5,14 @@ import { cn } from "../../../lib/utils";
 export default function Info() {
 
   return (
-    <section className="bg-gray-900 h-screen w-screen scroll-m-12" id="info">
+    <section className="bg-black min-h-screen w-screen pt-32" id="roadmap">
       <div className="max-w-2xl m-auto flex flex-col gap-8 items-start">
       <LetterSwapPingPong label="Road Map" className="text-5xl font-bold font-sans text-gray-50 capitalize m-auto cursor-default" staggerFrom={"first"}  />
       </div>
       <div className="relative w-full">
       <TmL/>
       </div>
-      <div className="m-auto flex items-center justify-center bg-gray-900 py-12">
+      <div className="m-auto flex items-center justify-center bg-black py-12">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeulHoIlovJ0llFgXQfrgeQeTOjVX6_bryhfSH1zN0aHkslhA/viewform?pli=1">
       <button type="button" className="btn" name="form-link">
         <strong className="fontl">Register Here</strong>

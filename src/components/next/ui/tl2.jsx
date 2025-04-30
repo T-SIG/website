@@ -71,7 +71,7 @@ export default function Roadmap() {
   }, [])
 
   return (
-    <div className={`min-h-screen w-full relative overflow-hidden font-sans bg-gray-900`}>
+    <div className={`min-h-screen w-full relative font-sans bg-black`}>
       <div className="max-w-5xl mx-auto px-4 py-12 relative z-10">
         <div ref={containerRef} className="relative">
           {/* Animated progress line */}
@@ -151,12 +151,12 @@ const {Icon} = module
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              <div className="bg-black/40 backdrop-blur-md border border-gray-800/30 rounded-xl p-6">
+              <div className="bg-zinc-800/40 backdrop-blur-md border border-zinc-800/30 rounded-xl p-6">
                 <div className="flex justify-start gap-2 items-center">
                    {/* {module.src ? <img src= { module.src} className={`aspect-square w-8 rounded-md`}/> : <module.Icon/>} */}
                   <h3 className="text-2xl font-bold text-blue-400">{module.title}</h3>
                 </div>
-                <p className="mt-4 text-gray-300 text-lg leading-relaxed max-w-xl">{module.description}</p>
+                <p className="mt-4 text-gray-100 text-lg leading-relaxed max-w-xl">{module.description}</p>
               </div>
             </motion.div>
           </motion.div>
