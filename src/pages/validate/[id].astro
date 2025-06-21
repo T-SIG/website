@@ -1,0 +1,78 @@
+---
+import Navbar from "../../components/next/validate/navbar";
+import Certificate from "../../components/next/validate/certificate";
+import "../../styles/fonts.astro";
+import certData from "../../data/db.json";
+
+export function getStaticPaths() {
+  return certData.certificates.map((certificate) => ({
+    params: { id: certificate.id.toString() },
+  }));
+}
+const { id } = Astro.params;
+const certificateExists = certData.certificates.some(
+  (certificate) => certificate.id === id
+);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-96x96.png"
+      sizes="96x96"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicons/favicon.ico"
+      media="(prefers-color-scheme: light)"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="TSIG" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+US+Modern:wght@100..400&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Validate Certificate</title>
+  </head>
+  <body class="bg-[#f0f0f0]">
+    <Navbar client:visible />
+    {
+      certificateExists ? (
+        <div class="certificates">
+          <Certificate id={id} />
+        </div>
+      ) : (
+        <h1>This certificate doesn't exist.</h1>
+      )
+    }
+    <button
+      type="button"
+      class="btn col-start-3 m-auto xl:col-start-5 min-w-[50px] w-auto"
+      name="form-link"
+      onclick="window.print()"
+    >
+      <strong class="xl:mx-[15px] my-[0px]">Download</strong>
+      <div id="container-stars">
+        <div id="stars"></div>
+      </div>
+      <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </button>
+  </body>
+</html>

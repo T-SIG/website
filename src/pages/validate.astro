@@ -1,19 +1,12 @@
 ---
-import Main from '../components/Main.astro'
-import Second from '../components/Second.astro'
-import Third from '../components/Third.astro'
-import '../styles/fonts.astro'
+import Navbar from "../components/next/validate/navbar";
+import "../styles/fonts.astro";
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>TSIG - Recruitment 2024</title>
-
-
+    <meta charset="UTF-8" />
+    <title>Validate Certificate</title>
     <link
       rel="icon"
       type="image/png"
@@ -34,12 +27,10 @@ import '../styles/fonts.astro'
       sizes="180x180"
       href="/favicons/apple-touch-icon.png"
     />
-    <meta name="apple-mobile-web-app-title" content="TSIG" />
-    <link rel="manifest" href="/favicons/site.webmanifest" />
   </head>
-  <body>
-    <Main/>
-    <Second/>
-    <Third/>
+  <body class="bg-[#f0f0f0]">
+    <Navbar client:visible />
+    <!-- <Certificate id={numericId} /> -->
+    <div class="flex items-center justify-center"><h1>This certificate doesn't exist.</h1></div>
   </body>
 </html>
