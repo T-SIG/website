@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+US+Modern:wght@100..400&family=Tangerine:wght@400;700&display=swap');
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+}
+
+span {
+  font-family: "tsig-font";
+}
+nav {
+  font-family: "tsig-font";
+}
+
+.navbar-right a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-right a:hover {
+  text-decoration: underline;
+}
+
+.cert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate {
+  background-image: url("../../public/images/certificate.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: auto;
+  aspect-ratio: auto;
+  min-width: 100vw;
+  min-height: 80vh;
+  position: relative;
+  margin: 15px;
+}
+
+.name {
+  position: absolute;
+  top: 45.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 900;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+  font-family: "Tangerine", cursive;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.certificate-border {
+  width: 850px;
+  background: white;
+  border: 6px solid orange;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  background: linear-gradient(to right, #fff, #fff),
+    linear-gradient(120deg, #4903a4, #1baaff, #fa08cd);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+}
+
+.badge-ribbon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+}
+
+.logo1 {
+  font-size: 24px;
+  color: #41b6e6;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.title {
+  color: #5e2ca5;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.recipient-name {
+  margin: 20px auto;
+  /* border:  solid red; */
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  width: fit-content;
+  color: #333;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 65px;
+  text-align: center;
+}
+
+.qr {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid #646464;
+}
+.sig-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sig-name {
+  font-family: "Cursive", sans-serif;
+  font-size: 22px;
+  color: #5e2ca5;
+  margin-bottom: 4px;
+}
+
+.sig-title {
+  font-size: 14px;
+  color: #555;
+}
+
+.certificate-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: auto;
+  aspect-ratio: auto;
+  min-width: 100vw;
+  min-height: 50vh;
+  position: relative;
+  visibility: hidden;
+  display: none;
+}
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+@media print {
+  body {
+    /* width: 210mm;
+    height: 297mm; */
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    zoom: 100%;
+  }
+  body {
+    visibility: hidden;
+  }
+  .cert-container {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .certificate-image {
+    display: inline;
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .name {
+    top: 56.5%;
+    font-size: 55px;
+  }
+
+  .certificate {
+    margin: 0px;
+  }
+}

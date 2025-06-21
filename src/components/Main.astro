@@ -3,10 +3,35 @@ import { Image } from "astro:assets";
 import "../styles/mainSect.css";
 ---
 
-<section class="min-h-screen flex items-center justify-center flex-col gap-3 relative">
-  <img src="/logos/bis.svg" alt="" class="aspect-auto h-10 absolute top-0 mt-10">
+<section
+  class="min-h-screen flex items-center justify-center flex-col gap-3 relative m-0"
+>
+  <section class="grid grid-cols-3 gap-8 p-8 absolute justify-items-center items-center top-0 right-0 xl:grid-cols-5">
+    <img
+      src="/logos/bis.svg"
+      alt=""
+      class="col-start-2 xl:col-start-3 min-w-[145px]"
+      style="size:inherit;"
+    />
+    <button
+      type="button"
+      class="btn col-start-3 ml-auto  xl:col-start-5  min-w-[50px] w-auto"
+      name="form-link"
+      style="width:auto"
+    >
+      <strong class="xl:mx-[15px] my-[0px] ">Sign in</strong>
+      <div id="container-stars">
+        <div id="stars"></div>
+      </div>
+      <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </button>
+  </section>
+
   <img src="/logos/optimized_logo.svg" alt="" id="mainLogo" />
-  
+
   <span class="text-5xl tracking-[18px] -mr-[18px] font-black">tsig</span>
   <button type="button" class="btn" name="form-link">
     <strong>Internpreneur</strong>
@@ -24,7 +49,9 @@ import "../styles/mainSect.css";
 <script defer>
   const btn = document.getElementsByClassName("btn");
   btn[0].onclick = () => {
+    window.open("https://tsig.onrender.com/", "_blank");
+  };
+  btn[1].onclick = () => {
     window.open("/internpreneur", "_blank");
   };
-
 </script>
