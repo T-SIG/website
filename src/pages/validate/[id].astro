@@ -13,6 +13,7 @@ const { id } = Astro.params;
 const certificateExists = certData.certificates.some(
   (certificate) => certificate.id === id
 );
+const name = id ? certData.certificates.find((c) => c.id === id).name : ""
 ---
 
 <html lang="en">
@@ -40,13 +41,7 @@ const certificateExists = certData.certificates.some(
     />
     <meta name="apple-mobile-web-app-title" content="TSIG" />
     <link rel="manifest" href="/favicons/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+US+Modern:wght@100..400&family=Tangerine:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Validate Certificate</title>
+    <title>Certificate of Completion</title>
   </head>
   <body class="bg-[#f0f0f0]">
     <Navbar client:visible />
