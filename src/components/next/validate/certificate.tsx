@@ -8,7 +8,7 @@ export default function Navbar({ id }) {
   return (
     <div className="cert-container">
       <div className="certificate">
-        <img className="certificate-image" src="/public/images/certificate.jpg" alt="Certificate"/>
+        <img className="certificate-image" src="/images/certificate.jpg" alt="Certificate"/>
         <h1 className="name">
           {id ? certData.certificates.find((c) => c.id === id).name : ""}
         </h1>
