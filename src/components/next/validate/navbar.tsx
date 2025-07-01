@@ -6,7 +6,7 @@ export default function Navbar() {
   
   return (
     
-    <nav className="navbar">
+    <nav className="navbar h-35 sm:h-40 md:h-14">
       <a href="https://tsigmjcet.in/">
         <div className="navbar-left">
           <img
