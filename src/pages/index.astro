@@ -1,8 +1,10 @@
 ---
+import PyWeek from '../components/PyWeek.astro'
 import Main from '../components/Main.astro'
 import Second from '../components/Second.astro'
 import Third from '../components/Third.astro'
 import '../styles/fonts.astro'
+import '../styles/global.css'
 ---
 
 <html lang="en">
@@ -38,8 +40,6 @@ import '../styles/fonts.astro'
     <link rel="manifest" href="/favicons/site.webmanifest" />
   </head>
   <body>
-    <Main/>
-    <Second/>
-    <Third/>
+    <PyWeek client:load/>
   </body>
 </html>
