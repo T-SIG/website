@@ -1,0 +1,29 @@
+{
+  "servers": {
+		"shadcn": {
+			"command": "npx",
+			"args": [
+				"shadcn@latest",
+				"mcp"
+			],
+			"type": "stdio"
+		},
+		"kibo-ui": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"mcp-remote",
+				"https://www.kibo-ui.com/api/mcp/mcp"
+			],
+			"type": "stdio"
+		},
+		"context7": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@upstash/context7-mcp"
+			]
+		}
+	}
+}
