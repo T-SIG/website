@@ -69,15 +69,16 @@ const Navbar1 = ({
     title: "TSIG",
   },
   menu = [
-    { title: "Home", url: "#" },
+    { title: "Home", url: "/" },
     {
-      title: "Pricing",
+      title: "Events",
       url: "#",
     },
     {
       title: "Blog",
       url: "#",
     },
+    { title: "Members", url: "#" },
   ],
 }: Navbar1Props) => {
   return (
