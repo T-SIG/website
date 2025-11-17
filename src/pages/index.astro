@@ -1,0 +1,22 @@
+---
+import FeaturesContent from "@/components/sections/features-content.astro";
+import FeaturesContentAlt from "@/components/sections/features-content-alt.astro";
+import FinalCta from "@/components/sections/final-cta.astro";
+import Footer from "@/components/sections/footer.astro";
+import Hero from "@/components/sections/hero.astro";
+import LogoCloud from "@/components/sections/logo-cloud.astro";
+import WhyItWorks from "@/components/sections/why-it-works.astro";
+import Layout from "@/layouts/main.astro";
+---
+
+<Layout content={{ title: "hello-world" }}>
+  <section class="min-h-screen text-center space-y-4">
+    <Hero />
+    <!-- <FeaturesContent /> -->
+    <WhyItWorks />
+    <FeaturesContentAlt />
+    <!-- <LogoCloud client:load /> -->
+    <FinalCta />
+    <Footer />
+  </section>
+</Layout>

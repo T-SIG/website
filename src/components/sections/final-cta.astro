@@ -1,0 +1,27 @@
+---
+import { ArrowRightIcon } from "lucide-react";
+import img from "@/assets/person3.png";
+import { Button } from "../ui/button";
+---
+
+<section
+  class="flex flex-col md:p-12 pb-0! mb-0 justify-center gap-8 md:min-h-screen bg-[radial-gradient(ellipse_200%_100%_at_50%_10%,var(--color-background)_30%,var(--color-orange-300)_45%,var(--color-pink-400)_60%,var(--color-background)_75%)] bg-no-repeat bg-center origin-center"
+>
+  <h3 class="font-serif italic text-2xl md:text-3xl">No stress, just flow</h3>
+  <h1 class="md:text-7xl text-3xl font-semibold mx-auto">
+    Ready to Reclaim Your Time?
+  </h1>
+  <p class="text-xl">
+    Start organizing, optimizing, and crushing your goals today.
+  </p>
+  <Button
+    variant={"ghost"}
+    className="font-mono uppercase md:text-base md:p-6 tracking-tight bg-transparent text-foreground border border-foreground rounded-full w-fit mx-auto"
+  >
+    TRY IT FOR FREE
+    <ArrowRightIcon className="size-4 md:size-5" />
+  </Button>
+  <div class={`relative bg-cover bg-center w-1/2 mx-auto`}>
+    <img src={img.src} class="w-full object-cover" />
+  </div>
+</section>

@@ -1,0 +1,60 @@
+---
+import { RocketIcon } from "lucide-react";
+
+import person1 from "@/assets/person1.png";
+---
+
+<section
+  class="grid grid-cols-1 md:grid-cols-3 grid-flow-row md:grid-rows-[auto_auto_1fr] gap-y-3 w-full md:p-12 p-4 text-left capitalize"
+>
+  <p class="font-serif italic text-2xl md:text-3xl md:col-span-full">
+    why it works?
+  </p>
+  <div class="md:col-span-2 tracking-tighter font-medium">
+    <p class="md:text-5xl text-2xl max-w-10/12 font-semibold">
+      built fot focus, made for real life
+    </p>
+  </div>
+  <div class="my-auto">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quisquam enim
+    harum dignissimos errorit amet consectetur adipisicing elit. Sit quisquam
+    enim harum dignissimos error
+  </div>
+  <div
+    class="md:col-span-2 h-full flex flex-col gap-2 py-12 font-semibold text-base"
+  >
+    <div
+      class="flex-1 flex flex-col items-start justify-center gap-2 border-l-4 border-foreground md:pl-8 pl-4"
+    >
+      <RocketIcon className="text-pink-700" />
+      <h1>Get More Done in Less Time</h1>
+      <p class="md:text-base text-sm font-normal">
+        Improve attention and manage your day with tools that blend clean
+        minimal work.
+      </p>
+    </div>
+    <div
+      class="flex-1 flex flex-col items-start justify-center gap-2 border-l-4 border-pink-700 md:pl-8 pl-4"
+    >
+      <RocketIcon className="text-pink-700" />
+      <h1>Stay Clean & Focused</h1>
+      <p class="md:text-base text-sm font-normal">
+        Improve attention and manage your day with tools that blend clean
+        minimal work.
+      </p>
+    </div>
+    <div
+      class="flex-1 flex flex-col items-start justify-center gap-2 border-l-4 border-foreground md:pl-8 pl-4"
+    >
+      <RocketIcon className="text-pink-700" />
+      <h1>take control of the schedule</h1>
+      <p class="md:text-base text-sm font-normal">
+        Improve attention and manage your day with tools that blend clean
+        minimal work.
+      </p>
+    </div>
+  </div>
+  <div class="p-4 ml-auto">
+    <img src={person1.src} class="rounded-lg md:rounded-xl" />
+  </div>
+</section>

@@ -19,5 +19,8 @@
   "files.autoSaveDelay": 1000,
   "files.autoSaveWhenNoErrors": true,
   "typescript.experimental.useTsgo": true,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit"
+  }
 }
