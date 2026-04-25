@@ -13,7 +13,7 @@ export default function Info() {
       <TmL/>
       </div>
       <div className="m-auto flex items-center justify-center bg-black py-12">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeulHoIlovJ0llFgXQfrgeQeTOjVX6_bryhfSH1zN0aHkslhA/viewform?pli=1">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_fin57tnDwA9_85QXavXOQiE3R6HASiLaJsdTx296gUZbFA/viewform">
       <button type="button" className="btn" name="form-link">
         <strong className="fontl">Register Here</strong>
         <div id="container-stars">
