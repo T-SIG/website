@@ -1,5 +1,4 @@
 ---
-
 import "../styles/mainSect.css";
 ---
 
@@ -21,7 +20,7 @@ import "../styles/mainSect.css";
       name="form-link"
       style="width:auto"
     >
-      <strong class="px-4 py-1 ">Sign in</strong>
+      <strong class="px-4 py-1">Sign in</strong>
       <div id="container-stars">
         <div id="stars"></div>
       </div>
@@ -35,8 +34,8 @@ import "../styles/mainSect.css";
   <img src="/logos/optimized_logo.svg" alt="" id="mainLogo" />
 
   <span class="text-5xl tracking-[18px] -mr-[18px] font-black">tsig</span>
-  <button type="button" class="btn" name="form-link">
-    <strong>Register Here</strong>
+  <a href="/internpreneur" type="button" class="btn" name="form-link">
+    <strong>Go to Internpreneur</strong>
     <div id="container-stars">
       <div id="stars"></div>
     </div>
@@ -44,19 +43,8 @@ import "../styles/mainSect.css";
       <div class="circle"></div>
       <div class="circle"></div>
     </div>
-  </button>
-  <a href="#why-sect" class="why"> why join us ? </a>
+  </a>
+  <a href="/internpreneur/#perks" class="why">
+    perks of joining Internpreneur ?
+  </a>
 </section>
-
-<script defer>
-  const btn = document.getElementsByClassName("btn");
-  btn[0].onclick = () => {
-    window.open("https://tsig.onrender.com/", "_blank");
-  };
-  btn[1].onclick = () => {
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSfinBJCRFBry-3HT3e7f6Xbwd8cpT_SYQ5QR6-MOKACywlRww/viewform?usp=sf_link",
-      "_blank"
-    );
-  };
-</script>
