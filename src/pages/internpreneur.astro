@@ -1,13 +1,25 @@
 ---
-import Home from "../components/next/internprenuer/page"
-import "../styles/global.css"
+const childUrl = "https://6-0-stand-alone.netlify.app/";
+const faviconUrl = "https://6-0-stand-alone.netlify.app/logo.png";
+const faviconSvgUrl = "https://6-0-stand-alone.netlify.app/logo.svg";
 ---
+
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Internprenuer 5.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Internprenuer 6.0</title>
+    <link rel="icon" href={faviconSvgUrl} type="image/svg+xml" />
+    <link rel="icon" href={faviconUrl} type="image/png" />
+    <link rel="shortcut icon" href={faviconUrl} type="image/png" />
+    <link rel="apple-touch-icon" href={faviconUrl} />
   </head>
-  <body class="bg-[#BBDDFD]">
-      <Home client:visible/>
+  <body class="m-0 bg-[#BBDDFD]">
+    <iframe
+      src={childUrl}
+      title="Internprenuer 6.0"
+      class="h-screen w-screen overflow-hidden border-0"
+    />
   </body>
 </html>
